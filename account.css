@@ -1,0 +1,75 @@
+.heading {
+    width: 100%;
+    margin-top: 66px;
+}
+.heading .heading_text {
+    display: flex;
+    justify-content: center;
+    padding: 66px 0;
+}
+.heading .heading_text h1{
+    font-size: 32px;
+    font-weight: 900;
+    letter-spacing: 0.1em;
+    text-decoration: 4px #f90 underline;
+}
+.account {
+    width: 100%;
+    margin-bottom: 132px
+}
+.account .container-account {
+    width: 25%;
+    margin: auto;
+    min-width: 300px;
+}
+.account .container-account .account_input {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.account .container-account .account_input .acc {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+.account .container-account .account_input .acc input {
+    height: 56px;
+}
+.account .container-account .account_input .pass {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+
+    position: relative;
+}
+.account .container-account .account_input .pass input {
+    height: 56px;
+}
+.account .container-account .account_input .pass p {
+    position: absolute;
+    top: 0;
+    right: 0;
+    text-decoration: none;
+    color: #000;
+}
+.account .container-account .account_button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 60px 0;
+    padding: 1em 0;
+    background-color: #f90;
+}
+.account .container-account .account_button:hover {
+    background-color: #a10;
+}
+
+.account .container-account .account_button p {
+    font-size: 24px;
+    letter-spacing: 0.1em;
+    color: #fff;
+}
+.account .container-account .account_others {
+    margin-bottom: 132px;
+}
