@@ -16,7 +16,7 @@
     top: 0;
     left: 8%;
     display: flex;
-    align-items: center; /* 重點：讓內文垂直置中 */
+    align-items: center;
 }
 .banner .banner_wrap .banner_text .banner_title {
     display: flex;
@@ -42,6 +42,7 @@
 .about .container-about {
     width: 62.5%;
     margin: auto;
+    min-width: 625px
 }
 .about .container-about .about_wrap {
     display: flex;
