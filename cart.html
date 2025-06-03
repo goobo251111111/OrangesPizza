@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>會員登入 | Orange's Pizza</title>
+    <title>購物車 | Orange's Pizza</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/account.css">
+    <link rel="stylesheet" href="css/cart.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
@@ -33,33 +33,37 @@
             </div>                
         </div>
     </header>
-    <section class="heading">
-        <div class="heading_text">
-            <h1>會員登入</h1>
+    <section class="step">
+        <div class="step_bar">
+            <div class="step_item item1">
+                <div class="step_number">1</div>
+                <div class="step_text">餐點內容</div>
+            </div>
+            <div class="step_arrow">
+                <img src="images/arrow.svg" alt="">
+            </div>
+            <div class="step_item item2">
+                <div class="step_number">2</div>
+                <div class="step_text">取餐方式</div>
+            </div>
+            <div class="step_arrow">
+                <img src="images/arrow.svg" alt="">
+            </div>
+            <div class="step_item item3">
+                <div class="step_number">3</div>
+                <div class="step_text">付款資訊</div>
+            </div>
         </div>
     </section>
-    <section class="account">
-        <div class="container-account">
-            <div class="account_input">
-                <div class="acc">
-                    <div class="labelrow">
-                        <label for="account">帳號</label>
-                    </div>
-                    <input type="text" id="account">
+    <section class="cart">
+        <div class="container-cart">
+            <div class="cart_table">
+                <div class="table_head">
                 </div>
-                <div class="pass">
-                    <div class="labelrow">
-                        <label for="password">密碼</label>
-                        <a href="#">忘記密碼</a>
-                    </div>
-                    <input type="password" id="password">
-                </div>
+                <div class="table_body"></div>
             </div>
-            <div class="account_button">
-                <a href="#">登入</a>
-            </div>
-            <div class="account_others">
-                <a href="#"><p>還沒有帳號？立即註冊！</p></a>
+            <div class="cart_button">
+                <a href="#">下一步</a>
             </div>
         </div>
     </section>

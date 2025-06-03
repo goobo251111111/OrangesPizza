@@ -20,7 +20,7 @@
 .stores .container-stores {
     width: 67%;
     margin: auto;
-    min-width: 800px;
+    min-width: 670px;
 }
 .stores .container-stores .stores_info {
     display: flex;
@@ -66,7 +66,7 @@
     gap: 1em;
 }
 .stores .container-stores .stores_info .stores_list .stores_item .stores_address p {
-    font-size: 24px;
+    font-size: 20px;
     letter-spacing: 0.1em;
     text-decoration: underline;
 }

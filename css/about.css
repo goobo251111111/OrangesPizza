@@ -1,0 +1,94 @@
+.banner {
+    width: 100%;
+    margin-top: 99px;
+    margin-bottom: 66px;
+}
+.banner .banner_wrap {
+    position: relative;
+    width: 75%;
+    aspect-ratio: 3 / 1;
+    margin: auto;
+    background-color: #f90;
+}
+.banner .banner_wrap .banner_text {
+    position: absolute;
+    height: 100%;
+    top: 0;
+    left: 8%;
+    display: flex;
+    align-items: center; /* 重點：讓內文垂直置中 */
+}
+.banner .banner_wrap .banner_text .banner_title {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.banner .banner_wrap .banner_text .banner_title h1 {
+    font-size: 42px;
+    font-weight: 900;
+    letter-spacing: 0.1em;
+    line-height: 1.25em;
+    color: #fff;
+}
+.banner .banner_wrap .banner_text .banner_title h3 {
+    font-size: 24px;
+    letter-spacing: 0.1em;
+    color: #fff;
+}
+.about {
+    width: 100%;
+    margin: 66px 0;
+}
+.about .container-about {
+    width: 62.5%;
+    margin: auto;
+}
+.about .container-about .about_wrap {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 66px;
+}
+.about .container-about .about_wrap .about_info {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.about .container-about .about_wrap .about_info .title h2 {
+    font-size: 32px;
+    font-weight: 900;
+    letter-spacing: 0.1em;
+    text-decoration: 4px #f90 underline;
+}
+.about .container-about .about_wrap .about_info .article p {
+    font-size: 16px;
+    letter-spacing: 0.1em;
+    line-height: 1.5em;
+}
+.about .container-about .about_wrap .about_info .list {
+    display: flex;
+    width: 100%;
+}
+.about .container-about .about_wrap .about_info .list .card {
+    width: 25%;
+}
+.about .container-about .about_wrap .about_info .list .card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.about .container-about .about_button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 66px;
+    padding: 1em 0;
+    background-color: #f90;
+}
+.about .container-about .about_button a {
+    font-size: 24px;
+    letter-spacing: 0.1em;
+    text-decoration: none;
+    color: #fff;
+}

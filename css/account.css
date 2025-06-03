@@ -30,7 +30,7 @@
 .account .container-account .account_input .acc {
     display: flex;
     flex-direction: column;
-    gap: 0;
+    gap: 4px;
 }
 .account .container-account .account_input .acc input {
     height: 56px;
@@ -38,17 +38,16 @@
 .account .container-account .account_input .pass {
     display: flex;
     flex-direction: column;
-    gap: 0;
-
-    position: relative;
+    gap: 4px;
 }
 .account .container-account .account_input .pass input {
     height: 56px;
 }
-.account .container-account .account_input .pass p {
-    position: absolute;
-    top: 0;
-    right: 0;
+.account .container-account .account_input .pass .labelrow {
+    display: flex;
+    justify-content: space-between;
+}
+.account .container-account .account_input .pass .labelrow a {
     text-decoration: none;
     color: #000;
 }
@@ -65,11 +64,14 @@
     background-color: #a10;
 }
 
-.account .container-account .account_button p {
+.account .container-account .account_button a {
     font-size: 24px;
     letter-spacing: 0.1em;
+    text-decoration: none;
     color: #fff;
 }
 .account .container-account .account_others {
+    display: flex;
+    justify-content: center;
     margin-bottom: 132px;
 }

@@ -6,14 +6,14 @@
     background-size: cover;
     background-position: bottom;
 }
-.hero .container-herotext {
+.hero .hero_wrap {
     display: flex;
     flex-direction: column;
     position: absolute;
     top: 33%;
     left: 6%;
 }
-.hero .container-herotext .hero_text h3 {
+.hero .hero_wrap .hero_text h3 {
     font-size: 24px;
     font-weight: 900;
     letter-spacing: 0.1em;
@@ -22,14 +22,14 @@
     margin-left: 0.5em;
     margin-bottom: 0.5em;
 }
-.hero .container-herotext .hero_text h1 {
+.hero .hero_wrap .hero_text h1 {
     font-size: 64px;
     font-weight: 900;
     letter-spacing: 0.1em;
     line-height: 1.25em;
     color: #fff;
 }
-.hero .container-herotext .hero_button {
+.hero .hero_wrap .hero_button {
     display: flex;
     padding: 1em 0;
     justify-content: center;
@@ -39,44 +39,44 @@
 
     margin-top: 1em;
 }
-.hero .container-herotext .hero_button:hover {
+.hero .hero_wrap .hero_button:hover {
     background-color: #a10;
 } 
-.hero .container-herotext .hero_button a {
+.hero .hero_wrap .hero_button a {
     font-size: 24px;
     letter-spacing: 0.1em;
     text-decoration: none;
     color: #fff;
 }
-
-
 .promo{
     width: 100%;
 }
 .promo .container-promo {
-    display: grid;
-    grid-template: repeat(2, 1fr) / repeat(9, 1fr);
     width: 67%;
     margin: 90px auto;
-    min-width: 800px;
+    min-width: 670px;
+}
+.promo .container-promo .promo_block {
+    display: grid;
+    grid-template: repeat(2, 1fr) / repeat(9, 1fr);
     gap: 8px;
 }
-.promo .container-promo .promo_bigbox {
+.promo .container-promo .promo_block .promo_bigbox {
     grid-area: 1/1/2/10;
 
     display: flex;
     justify-content: center;
     align-items: center;
-    aspect-ratio: 900 / 250;
+    aspect-ratio: 920 / 250;
     background-color: #eee;
 }
-.promo .container-promo .promo_bigbox h2 {
+.promo .container-promo .promo_block .promo_bigbox h2 {
     font-size: 36px;
     font-weight: 900;
     letter-spacing: 0.1em;
     color: #000;
 }
-.promo .container-promo .promo_lilboxes {
+.promo .container-promo .promo_block .promo_lilboxes {
     grid-area: 2/1/3/6;
 
     display: grid;
@@ -85,28 +85,33 @@
 
     /* height: 100%; */
 }
-.promo .container-promo .promo_lilboxes .promo_lilbox {
+.promo .container-promo .promo_block .promo_lilboxes .promo_lilbox {
     grid-column: 1 / 2;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    width: 100%;
     background-color: #eee;
 }
-.promo .container-promo .promo_lilboxes .promo_lilbox a {
-    align-self: center;
-    font-size: 24px;
-    letter-spacing: 0.1em;
-    text-decoration: none;
-    color: #000;
+.promo .container-promo .promo_block .promo_lilboxes .promo_lilbox img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
 }
-.promo .container-promo .promo_lilboxes .box2 {
+.promo .container-promo .promo_block .promo_lilboxes .box2 {
     grid-column: 2 / 3;
+
+    position: relative;
+    /* background-image: url("../images/lilbox_pic2.jpg");
+    background-size: cover; */
 } 
-.promo .container-promo .promo_lilboxes .box2 a {
+.promo .container-promo .promo_block .promo_lilboxes .box2 a {
+    position: absolute;
+    right: 8px;
+    bottom: 8px;    
+    font-size: 16px;
     color: #fff;
 }
-.promo .container-promo .coupon_box {
+.promo .container-promo .promo_block .coupon_box {
     grid-area: 2/6/3/10;
 
     display: flex;
@@ -114,27 +119,28 @@
     justify-content: space-evenly;
     align-items: center;
     background-color: #fda;
+    border: 1px solid #000;
 
     /* height: 100%; */
 }
-.promo .container-promo .coupon_box .coupon_title {
+.promo .container-promo .promo_block .coupon_box .coupon_title {
     font-size: 24px;
     font-weight: 500;
     letter-spacing: 0.1em;
     color: #000;
 }
-.promo .container-promo .coupon_box .coupon_input {
+.promo .container-promo .promo_block .coupon_box .coupon_input {
     display: flex;
     justify-content: center;
     gap: 0;
 }
-.promo .container-promo .coupon_box .coupon_input input {
+.promo .container-promo .promo_block .coupon_box .coupon_input input {
     width: 50%;
     font-size: 16px;
     padding: 0.75em;
     border: none;
 }
-.promo .container-promo .coupon_box .coupon_input button {
+.promo .container-promo .promo_block .coupon_box .coupon_input button {
     all: unset;
     font-size: 16px;
     letter-spacing: 0.1em;
@@ -143,39 +149,39 @@
     background-color: #f90;
     border: none;
 }
-.promo .container-promo .coupon_box .coupon_input button:hover {
+.promo .container-promo .promo_block .coupon_box .coupon_input button:hover {
     background-color: #a10;
 }
-
-
 .menu {
     width: 100%;
 }
 .menu .container-menu {
+    width: 67%;
+    margin: 90px auto;
+    min-width: 670px;
+}
+.menu .container-menu .menu_block {
     display: flex;
     flex-direction: column;
-    width: 67%;
-    gap: 60px;
-    margin: 90px auto;
-    min-width: 800px;
+    gap: 60px;    
 }
-.menu .container-menu .menu_slog {
+.menu .container-menu .menu_block .menu_slog {
     margin-right: auto;
 }
-.menu .container-menu .menu_slog h2 {
+.menu .container-menu .menu_block .menu_slog h2 {
     font-size: 36px;
     font-weight: 900;
     letter-spacing: 0.1em;
 }
-.menu .container-menu .menu_slog span {
+.menu .container-menu .menu_block .menu_slog span {
     color: #f90;
 }
-.menu .container-menu .menu_list {
+.menu .container-menu .menu_block .menu_list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 60px;
 }
-.menu .container-menu .menu_list .menu_card {
+.menu .container-menu .menu_block .menu_list .menu_card {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -183,30 +189,30 @@
     align-items: center;
     gap: 20px;
 }
-.menu .container-menu .menu_list .menu_card:hover {
+.menu .container-menu .menu_block .menu_list .menu_card:hover {
     border-radius: 10%;
     background-color: #fda;
 }
-.menu .container-menu .menu_list .menu_card img {
+.menu .container-menu .menu_block .menu_list .menu_card img {
     width: 100%;
     height: auto;
     display: block;
     object-fit: cover;
 }    
-.menu .container-menu .menu_list .menu_card h4 {
+.menu .container-menu ..menu_block menu_list .menu_card h4 {
     font-size: 16px;
     letter-spacing: 0.1em;
 }
-.menu .container-menu .menu_button {
+.menu .container-menu .menu_block .menu_button {
     margin-left: auto;
     padding: 0.75em 2em;
     background-color: #f90;
     border: none;
 }
-.menu .container-menu .menu_button:hover {
+.menu .container-menu .menu_block .menu_button:hover {
     background-color: #a10;
 }
-.menu .container-menu .menu_button a {
+.menu .container-menu .menu_block .menu_button a {
     font-size: 16px;
     letter-spacing: 0.1em;
     text-decoration: none;
