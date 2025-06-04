@@ -34,6 +34,11 @@
 }
 .account .container-account .account_input .acc input {
     height: 56px;
+    padding: 0px 10px;
+    border-radius: 0;
+}
+.account .container-account .account_input .acc input:focus {
+    outline: none;
 }
 .account .container-account .account_input .pass {
     display: flex;
@@ -42,6 +47,11 @@
 }
 .account .container-account .account_input .pass input {
     height: 56px;
+    padding: 0.75em;
+    border-radius: 0;
+}
+.account .container-account .account_input .pass input:focus {
+    outline: none;
 }
 .account .container-account .account_input .pass .labelrow {
     display: flex;

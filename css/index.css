@@ -30,23 +30,21 @@
     color: #fff;
 }
 .hero .hero_wrap .hero_button {
-    display: flex;
-    padding: 1em 0;
-    justify-content: center;
-    align-items: center;
+    display: block;
+    padding: 0.75em 0;
     background-color: #f90;
     border: none;
 
-    margin-top: 1em;
+    font-size: 24px;
+    letter-spacing: 0.1em;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+
+    margin-top: 0.75em;
 }
 .hero .hero_wrap .hero_button:hover {
     background-color: #a10;
-} 
-.hero .hero_wrap .hero_button a {
-    font-size: 24px;
-    letter-spacing: 0.1em;
-    text-decoration: none;
-    color: #fff;
 }
 .promo{
     width: 100%;
@@ -142,16 +140,23 @@
     padding: 0.75em;
     border: none;
 }
-.promo .container-promo .promo_block .coupon_box .coupon_input button {
-    all: unset;
-    font-size: 16px;
-    letter-spacing: 0.1em;
+.promo .container-promo .promo_block .coupon_box .coupon_input input:focus {
+    outline: none;
+} 
+.promo .container-promo .promo_block .coupon_box .coupon_input .coupon_button {
+    display: block;
     padding: 0.75em 2em;
-    color: #fff;
     background-color: #f90;
     border: none;
+
+    font-size: 16px;
+    letter-spacing: 0.1em;
+    text-decoration: none;
+    color: #fff;
+
+    display: block;
 }
-.promo .container-promo .promo_block .coupon_box .coupon_input button:hover {
+.promo .container-promo .promo_block .coupon_box .coupon_input .coupon_button:hover {
     background-color: #a10;
 }
 .menu {
@@ -192,8 +197,7 @@
     gap: 20px;
 }
 .menu .container-menu .menu_block .menu_list .menu_card:hover {
-    border-radius: 10%;
-    background-color: #fda;
+    opacity: 75%;
 }
 .menu .container-menu .menu_block .menu_list .menu_card img {
     width: 100%;
@@ -206,17 +210,18 @@
     letter-spacing: 0.1em;
 }
 .menu .container-menu .menu_block .menu_button {
-    margin-left: auto;
+    display: block;
     padding: 0.75em 2em;
     background-color: #f90;
     border: none;
-}
-.menu .container-menu .menu_block .menu_button:hover {
-    background-color: #a10;
-}
-.menu .container-menu .menu_block .menu_button a {
+
     font-size: 16px;
     letter-spacing: 0.1em;
     text-decoration: none;
-    color: #fff;    
+    color: #fff;
+    
+    margin-left: auto;
+}
+.menu .container-menu .menu_block .menu_button:hover {
+    background-color: #a10;
 }
