@@ -69,12 +69,14 @@
     align-items: center;
     aspect-ratio: 920 / 250;
     background-color: #eee;
+    background-image: url(../images/promo_pic1.jpg);
+    background-size: cover;
 }
 .promo .container-promo .promo_block .promo_bigbox h2 {
     font-size: 36px;
     font-weight: 900;
     letter-spacing: 0.1em;
-    color: #000;
+    color: #fff;
 }
 .promo .container-promo .promo_block .promo_lilboxes {
     grid-area: 2/1/3/6;
