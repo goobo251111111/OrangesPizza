@@ -8,7 +8,9 @@
     width: 75%;
     aspect-ratio: 3 / 1;
     margin: auto;
-    background-color: #f90;
+    background-image: url(../images/about_pic1.jpg);
+    background-size: cover;
+    /* background-color: #f90; */
 }
 .banner .banner_wrap .banner_text {
     position: absolute;
