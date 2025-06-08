@@ -83,22 +83,21 @@
 }
 .modal_content .close {
     position: absolute;
-    top: 0em;
-    right: 0em;
+    top: 0;
+    right: 0;
     width: 88px;
     height: 88px;
+    padding: 8px;
     clip-path: polygon(100% 0, 100% 100%, 0 0);
     cursor: pointer;
+    background-color: #a10;
     /* z-index: 1; */
 
     display: flex;
     justify-content: flex-end;
     align-items: flex-start;
-    padding: 8px;
     font-size: 32px;
-
     color: #fff;
-    background-color: #a10;
 }
 .modal_content .modal_pic {
     width: 50%;

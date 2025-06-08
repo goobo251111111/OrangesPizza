@@ -16,6 +16,14 @@ function openModal(element) {
 
 function closeModal() {
     document.getElementById('modal').style.display = 'none';
+
+    document.getElementById('modal').addEventListener('click',
+        function (e) { 
+            if (e.target === this) { 
+                closeModal();
+            }
+        }
+    );
 }
 
 function addToCart() {

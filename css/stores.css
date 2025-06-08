@@ -37,12 +37,6 @@
     height: auto;
     display: block;
     object-fit: cover;
-
-    position: absolute;
-    top: 0;
-    left: 0;
-    opacity: 0;
-    transition: opacity 0.5s
 }
 .stores .container-stores .stores_info .stores_list {
     display: flex;
