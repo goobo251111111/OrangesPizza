@@ -29,7 +29,7 @@
             <!-- </nav>     -->
             <div class="header_utility">
                 <div class="account-icon"><a href="account.html"><img src="images/acc.svg" alt="account"></a></div>
-                <div class=cart-icon"><a href="cart.html"><img src="images/cart.svg" alt=cart"></a></div>
+                <div class="cart-icon"><a href="cart.html"><img src="images/cart.svg" alt=cart"></a></div>
             </div>                
         </div>
     </header>
@@ -41,7 +41,13 @@
     <section class="menu">
         <div class="container-menu">
             <div class="menu_list">
-                <div class="menu_card peperoni">
+                <div class="menu_card peperoni"
+                    onclick="openModal(this)"
+                    data-img="images/menu_peperoni.png"
+                    data-name="臘腸 Peperoni"
+                    data-price="200"
+                    data-desc1="特製番茄醬"
+                    data-desc2="臘腸、馬茲瑞拉起司">
                     <div class="pic">
                         <img src="images/menu_peperoni.png" alt="臘腸 Peperoni">
                     </div>
@@ -49,7 +55,13 @@
                         <h4>臘腸 Peperoni</h4><p>$200</p>
                     </div>                    
                 </div>
-                <div class="menu_card seafood">
+                <div class="menu_card seafood"
+                    onclick="openModal(this)"
+                    data-img="images/menu_seafood.png"
+                    data-name="海鮮 Seafood"
+                    data-price="200"
+                    data-desc1="特製番茄醬"
+                    data-desc2="花枝、蝦仁、新鮮番茄、蒜頭">
                     <div class="pic">
                         <img src="images/menu_seafood.png" alt="海鮮 Seafood">
                     </div>
@@ -57,7 +69,13 @@
                         <h4>海鮮 Seafood</h4><p>$200</p>
                     </div>
                 </div>
-                <div class="menu_card margherira">
+                <div class="menu_card margherira"
+                    onclick="openModal(this)"
+                    data-img="images/menu_margherita.png"
+                    data-name="瑪格麗特 Margherita"
+                    data-price="200"
+                    data-desc1="特製番茄醬"
+                    data-desc2="新鮮羅勒、馬茲瑞拉起司">
                     <div class="pic">
                         <img src="images/menu_margherita.png" alt="瑪格麗特 Margherita">
                     </div>
@@ -65,13 +83,25 @@
                         <h4>瑪格麗特 Margherita</h4><p>$200</p>
                     </div>                    
                 </div>
-                <div class="menu_card marinara">
+                <div class="menu_card marinara"
+                    onclick="openModal(this)"
+                    data-img="images/menu_marinara.png"
+                    data-name="瑪莉娜拉 Marinara"
+                    data-price="200"
+                    data-desc1="特製番茄醬"
+                    data-desc2="乾燥羅勒">
                     <div class="pic"><img src="images/menu_marinara.png" alt="瑪莉娜拉 Marinara"></div>
                     <div class="text">
                         <h4>瑪莉娜拉 Marinara</h4><p>$200</p>
                     </div>
                 </div>
-                <div class="menu_card chicken">
+                <div class="menu_card chicken"
+                    onclick="openModal(this)"
+                    data-img="images/menu_chicken.png"
+                    data-name="烤雞 Chicken"
+                    data-price="200"
+                    data-desc1="特製番茄醬"
+                    data-desc2="雞絲、乾燥香菜">
                     <div class="pic">
                         <img src="images/menu_chicken.png" alt="烤雞 Chicken">
                     </div>
@@ -79,7 +109,13 @@
                         <h4>烤雞 Chicken</h4><p>$200</p>
                     </div>                    
                 </div>
-                <div class="menu_card meatlover">
+                <div class="menu_card meatlover"
+                    onclick="openModal(this)"
+                    data-img="images/menu_meatlover.png"
+                    data-name="總匯 Meatlover"
+                    data-price="200"
+                    data-desc1="特製番茄醬"
+                    data-desc2="香腸、火腿、青椒、洋蔥">
                     <div class="pic">
                         <img src="images/menu_meatlover.png" alt="總匯 Meatlover">
                     </div>
@@ -87,7 +123,13 @@
                         <h4>總匯 Meatlover</h4><p>$200</p>
                     </div>
                 </div>
-                <div class="menu_card bacon">
+                <div class="menu_card bacon"
+                    onclick="openModal(this)"
+                    data-img="images/menu_bacon.png"
+                    data-name="培根 Bacon"
+                    data-price="200"
+                    data-desc1="特製番茄醬"
+                    data-desc2="培根、馬茲瑞拉起司">
                     <div class="pic">
                         <img src="images/menu_bacon.png" alt="培根 Becon">
                     </div>
@@ -95,7 +137,13 @@
                         <h4>培根 Becon</h4><p>$200</p>
                     </div>                   
                 </div>
-                <div class="menu_card mushroom">
+                <div class="menu_card mushroom"
+                    onclick="openModal(this)"
+                    data-img="images/menu_mushroom.png"
+                    data-name="蘑菇 Mushroom"
+                    data-price="200"
+                    data-desc1="特製番茄醬"
+                    data-desc2="蘑菇，乾燥香菜">
                     <div class="pic">
                         <img src="images/menu_mushroom.png" alt="蘑菇 Mushroom">
                     </div>
@@ -103,7 +151,13 @@
                         <h4>蘑菇 Mushroom</h4><p>$200</p>
                     </div>                    
                 </div>
-                <div class="menu_card mexican">
+                <div class="menu_card mexican"
+                    onclick="openModal(this)"
+                    data-img="images/menu_mexican.png"
+                    data-name="墨西哥 Mexican"
+                    data-price="200"
+                    data-desc1="特製番茄醬"
+                    data-desc2="肉丸、墨西哥辣椒、青椒、番茄">
                     <div class="pic">
                         <img src="images/menu_mexican.png" alt="墨西哥 Mexican">
                     </div>
@@ -111,13 +165,40 @@
                         <h4>墨西哥 Mexican</h4><p>$200</p>
                     </div>                    
                 </div>
-                <div class="menu_card hawaiiann">
+                <div class="menu_card hawaiiann"
+                    onclick="openModal(this)"
+                    data-img="images/menu_hawaiian.png"
+                    data-name="夏威夷 Hawaiian"
+                    data-price="200"
+                    data-desc1="特製番茄醬"
+                    data-desc2="火腿、鳳梨">
                     <div class="pic">
                         <img src="images/menu_hawaiian.png" alt="夏威夷 Hawaiian">
                     </div>
                     <div class="text">
                         <h4>夏威夷 Hawaiian</h4><p>$200</p>
                     </div>                    
+                </div>
+            </div>
+            <div id="modal" class="modal">
+                <div class="modal_content">
+                    <div class="close" onclick="closeModal()">&times;</div>
+                    <div class="modal_pic">
+                        <img id="img" src="" alt="">
+                    </div>
+                    <div class="modal_text">
+                        <h2 id="name"></h2>
+                        <p id="price"></p>
+                        <div class="description">
+                            <p id="desc1"></p><br>
+                            <p id="desc2"></p>
+                        </div>
+                        <div class="quantity_input">
+                            <label for="quantity"></label>
+                            <input type="number" id="quantity" min="1" value="1">
+                            <button onclick="addToCart()">加入</button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -139,6 +220,7 @@
                 <p></p>
             </div>   
         </div>
-    </footer>    
+    </footer>
+<script src="js/menu_modal.js"></script>        
 </body>
 </html>

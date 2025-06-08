@@ -132,29 +132,34 @@
 .promo .container-promo .promo_block .coupon_box .coupon_input {
     display: flex;
     justify-content: center;
+    /* align-items: center; */
     gap: 0;
 }
 .promo .container-promo .promo_block .coupon_box .coupon_input input {
-    width: 50%;
-    font-size: 16px;
-    padding: 0.75em;
+    all: unset;
+    width: 160px;
+    padding: 0 8px;
     border: none;
+    box-sizing: border-box;
+    background-color: #fff;
 }
 .promo .container-promo .promo_block .coupon_box .coupon_input input:focus {
     outline: none;
 } 
 .promo .container-promo .promo_block .coupon_box .coupon_input .coupon_button {
+    all: unset;
     display: block;
     padding: 0.75em 2em;
-    background-color: #f90;
     border: none;
+    box-sizing: border-box;
+    background-color: #f90;
 
     font-size: 16px;
     letter-spacing: 0.1em;
     text-decoration: none;
     color: #fff;
 
-    display: block;
+    cursor: pointer;
 }
 .promo .container-promo .promo_block .coupon_box .coupon_input .coupon_button:hover {
     background-color: #a10;

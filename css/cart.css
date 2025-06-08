@@ -62,21 +62,20 @@
     padding: 16px;
 }
 .cart .container-cart .cart_button {
+    all: unset;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 200px;
-    padding: 1em 0;
+    padding: 0.75em 2em;
     margin-top: 36px;
     margin-left: auto;
     background-color: #f90;
-}
-.cart .container-cart .cart_button:hover {
-    background-color: #a10;
-}
-.cart .container-cart .cart_button a {
+
     font-size: 24px;
     letter-spacing: 0.1em;
     text-decoration: none;
     color: #fff;
+}
+.cart .container-cart .cart_button:hover {
+    background-color: #a10;
 }
