@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>會員登入 | Orange's Pizza 超濃起司披薩專門店</title>
+    <title>會員 | Orange's Pizza 超濃起司披薩專門店</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/account.css">
@@ -40,26 +40,26 @@
     </section>
     <section class="account">
         <div class="container-account">
-            <div class="account_input">
+            <form class="account_form" action="#" method="post">
                 <div class="acc">
                     <div class="labelrow">
                         <label for="account">帳號</label>
                     </div>
-                    <input type="text" id="account">
+                    <input type="text" id="account" name="account" >
                 </div>
                 <div class="pass">
                     <div class="labelrow">
                         <label for="password">密碼</label>
-                        <a href="#">忘記密碼</a>
+                        <a href="#">忘記密碼？</a>
                     </div>
-                    <input type="password" id="password">
+                    <input type="password" id="password" name="password">
                 </div>
+                <div class="submit">
+                <button type="submit">登入</button>
             </div>
-            <div class="account_button">
-                <a href="#">登入</a>
-            </div>
+            </form>
             <div class="account_others">
-                <a href="#"><p>還沒有帳號？立即註冊！</p></a>
+                <a href="#">還沒有帳號？立即註冊！</a>
             </div>
         </div>
     </section>

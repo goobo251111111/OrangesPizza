@@ -22,66 +22,81 @@
     margin: auto;
     min-width: 300px;
 }
-.account .container-account .account_input {
+.account .container-account .account_form {
     display: flex;
     flex-direction: column;
     gap: 30px;
 }
-.account .container-account .account_input .acc {
+.account .container-account .account_form .acc {
     display: flex;
     flex-direction: column;
     gap: 4px;
 }
-.account .container-account .account_input .acc input {
+.account .container-account .account_form .acc input {
     height: 56px;
-    padding: 0px 10px;
+    padding: 0 0.75em;
     border-radius: 0;
 }
-.account .container-account .account_input .acc input:focus {
+.account .container-account .account_form .acc input:focus {
     outline: none;
 }
-.account .container-account .account_input .pass {
+.account .container-account .account_form .pass {
     display: flex;
     flex-direction: column;
     gap: 4px;
 }
-.account .container-account .account_input .pass input {
+.account .container-account .account_form .pass input {
     height: 56px;
-    padding: 0.75em;
+    padding: 0 0.75em;
     border-radius: 0;
 }
-.account .container-account .account_input .pass input:focus {
+.account .container-account .account_form .pass input:focus {
     outline: none;
 }
-.account .container-account .account_input .pass .labelrow {
+.account .container-account .account_form .pass .labelrow {
     display: flex;
-    justify-content: space-between;
+    position: relative;
+    /* justify-content: space-between; */
 }
-.account .container-account .account_input .pass .labelrow a {
+.account .container-account .account_form .pass .labelrow a {
+    position: absolute;
+    top: 0;
+    right: 0;
     text-decoration: none;
     color: #000;
 }
-.account .container-account .account_button {
+.account .container-account .account_form .pass .labelrow a:hover {
+    color: #a10;
+} 
+.account .container-account .account_form .submit {
+    width: 100%;
+    margin: 30px 0 60px;
+}
+.account .container-account .account_form .submit button {
+    all: unset;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
-    margin: 60px 0;
-    padding: 1em 0;
+    padding: 0.75em 0;
     background-color: #f90;
-}
-.account .container-account .account_button:hover {
-    background-color: #a10;
-}
-
-.account .container-account .account_button a {
+    
     font-size: 24px;
     letter-spacing: 0.1em;
     text-decoration: none;
     color: #fff;
 }
+.account .container-account .account_form .submit button:hover {
+    background-color: #a10;
+}
 .account .container-account .account_others {
     display: flex;
     justify-content: center;
     margin-bottom: 132px;
+}
+.account .container-account .account_others a {
+    color: #000;
+}
+.account .container-account .account_others a:hover {
+    color:#a10;
 }
