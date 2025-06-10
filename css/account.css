@@ -85,6 +85,8 @@
     letter-spacing: 0.1em;
     text-decoration: none;
     color: #fff;
+
+    cursor: pointer;
 }
 .account .container-account .account_form .submit button:hover {
     background-color: #a10;

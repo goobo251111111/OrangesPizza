@@ -90,7 +90,7 @@
     padding: 8px;
     clip-path: polygon(100% 0, 100% 100%, 0 0);
     cursor: pointer;
-    background-color: #a10;
+    background-color: #b10;
     /* z-index: 1; */
 
     display: flex;
@@ -98,6 +98,9 @@
     align-items: flex-start;
     font-size: 32px;
     color: #fff;
+}
+.modal_content .close:hover {
+    background-color: #a10;
 }
 .modal_content .modal_pic {
     width: 50%;
