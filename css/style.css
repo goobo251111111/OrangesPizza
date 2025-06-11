@@ -27,13 +27,6 @@ header .container-header {
 
     min-width: 860px;
 }
-header .container-header {
-    display: flex;
-    height: 100%;
-    margin: 0 6% 0 8%;
-
-    min-width: 860px;
-}
 header .container-header .header_logo {
     height: 100%;
     margin-right: auto;

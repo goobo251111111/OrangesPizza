@@ -41,20 +41,23 @@
     <section class="login">
         <div class="container-login">
             <form class="login_form" id="loginForm" action="#" method="post">
-                <div class="acc">
+                <div class="login_input acc">
                     <div class="labelrow">
                         <label for="account">帳號</label>
                     </div>
                     <input type="text" id="account" name="account" maxlength="12">
+                    <small class="error1 errorA">請輸入帳號</small>
                 </div>
-                <div class="pass">
+                <div class="login_input pass">
                     <div class="labelrow">
                         <label for="password">密碼</label>
                         <a href="#">忘記密碼？</a>
                     </div>
                     <input type="password" id="password" name="password" maxlength="20">
+                    <small class="error1 errorP">請輸入密碼</small>
+                    <small class="error2">請確認帳號或密碼是否有誤</small>
                 </div>
-                <div class="submit">
+                <div class="login_submit">
                 <button type="submit">登入</button>
             </div>
             </form>
@@ -81,6 +84,6 @@
             </div>
         </div>
     </footer>
-    <script src="js/stores_pic.js"></script>
+    <script src="js/account_valid.js"></script>
 </body>
 </html>

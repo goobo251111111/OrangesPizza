@@ -27,54 +27,55 @@
     flex-direction: column;
     gap: 2rem;
 }
-.login .container-login .login_form .acc {
-    display: flex;
-    flex-direction: column;
-    gap: 0.125rem;
-}
-.login .container-login .login_form .acc input {
-    height: 3rem;
-    padding: 0 0.75rem;
-    border: 1px solid #000;
-    border-radius: 0;
-}
-.login .container-login .login_form .acc input:focus {
-    outline: none;
-}
-.login .container-login .login_form .pass {
-    display: flex;
-    flex-direction: column;
-    gap: 0.125rem;
-}
-.login .container-login .login_form .pass input {
-    height: 3rem;
-    padding: 0 0.75rem;
-    border: 1px solid #000;
-    border-radius: 0;
-}
-.login .container-login .login_form .pass input:focus {
-    outline: none;
-}
-.login .container-login .login_form .pass .labelrow {
+.login .container-login .login_form .login_input {
     display: flex;
     position: relative;
-    /* justify-content: space-between; */
+    flex-direction: column;
+    gap: 0.125rem;
 }
-.login .container-login .login_form .pass .labelrow a {
+.login .container-login .login_form .login_input input {
+    height: 3rem;
+    padding: 0 0.75rem;
+    border: 1px solid #000;
+    border-radius: 0;
+}
+.login .container-login .login_form .login_input input:focus {
+    outline: none;
+}
+
+.login .container-login .login_form .login_input .error1 {
+    display: none;
+    position: absolute;
+    top: 100%;
+    font-size: 0.75rem;
+    color: #a10;
+}
+.login .container-login .login_form .login_input .error2 {
+    display: none;
+    position: absolute;
+    top: 125%;
+    font-size: 0.75rem;
+    color: #a10;
+}
+.login .container-login .login_form .login_input.pass .labelrow {
+    display: flex;
+    position: relative;
+}
+.login .container-login .login_form .login_input.pass .labelrow a {
     position: absolute;
     top: 0;
     right: 0;
     text-decoration: none;
     color: #000;
 }
-.login .container-login .login_form .pass .labelrow a:hover {
+.login .container-login .login_form .login_input.pass .labelrow a:hover {
     color: #a10;
 } 
-.login .container-login .login_form .submit {
+.login .container-login .login_form .login_submit {
     width: 100%;
     margin: 2rem 0 4rem;
 }
-.login .container-login .login_form .submit button {
+.login .container-login .login_form .login_submit button {
     all: unset;
     display: flex;
     justify-content: center;
@@ -90,7 +91,7 @@
 
     cursor: pointer;
 }
-.login .container-login .login_form .submit button:hover {
+.login .container-login .login_form .login_submit button:hover {
     background-color: #a10;
 }
 .login .container-login .login_others {
