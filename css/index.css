@@ -14,7 +14,7 @@
     left: 6%;
 }
 .hero .hero_wrap .hero_text h3 {
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 900;
     letter-spacing: 0.1em;
     color: #fff;
@@ -23,7 +23,7 @@
     margin-bottom: 0.5em;
 }
 .hero .hero_wrap .hero_text h1 {
-    font-size: 64px;
+    font-size: 4rem;
     font-weight: 900;
     letter-spacing: 0.1em;
     line-height: 1.25em;
@@ -31,11 +31,11 @@
 }
 .hero .hero_wrap .hero_button {
     display: block;
-    padding: 0.75em 0;
+    padding: 0.7em 0;
     background-color: #f90;
     border: none;
 
-    font-size: 24px;
+    font-size: 1.5rem;
     letter-spacing: 0.1em;
     text-align: center;
     text-decoration: none;
@@ -51,13 +51,13 @@
 }
 .promo .container-promo {
     width: 67%;
-    margin: 90px auto;
+    margin: 5.5rem auto;
     min-width: 670px;
 }
 .promo .container-promo .promo_block {
     display: grid;
     grid-template: repeat(2, 1fr) / repeat(9, 1fr);
-    gap: 8px;
+    gap: 0.5rem;
 }
 .promo .container-promo .promo_block .promo_bigbox {
     grid-area: 1/1/2/10;
@@ -71,7 +71,7 @@
     background-size: cover;
 }
 .promo .container-promo .promo_block .promo_bigbox h2 {
-    font-size: 36px;
+    font-size: 2.25rem;
     font-weight: 900;
     letter-spacing: 0.1em;
     color: #fff;
@@ -81,7 +81,7 @@
 
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 8px;
+    gap: 0.5rem;
 
     /* height: 100%; */
 }
@@ -107,8 +107,7 @@
 .promo .container-promo .promo_block .promo_lilboxes .box2 a {
     position: absolute;
     right: 8px;
-    bottom: 8px;    
-    font-size: 16px;
+    bottom: 8px;
     color: #fff;
 }
 .promo .container-promo .promo_block .coupon_box {
@@ -124,7 +123,7 @@
     /* height: 100%; */
 }
 .promo .container-promo .promo_block .coupon_box .coupon_title {
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 500;
     letter-spacing: 0.1em;
     color: #000;
@@ -138,7 +137,7 @@
 .promo .container-promo .promo_block .coupon_box .coupon_input input {
     all: unset;
     width: 160px;
-    padding: 0 8px;
+    padding: 0 0.5rem;
     border: none;
     box-sizing: border-box;
     background-color: #fff;
@@ -154,7 +153,7 @@
     box-sizing: border-box;
     background-color: #f90;
 
-    font-size: 16px;
+    font-size: 1rem;
     letter-spacing: 0.1em;
     text-decoration: none;
     color: #fff;
@@ -169,19 +168,19 @@
 }
 .menu .container-menu {
     width: 67%;
-    margin: 90px auto;
+    margin: 5.5rem auto;
     min-width: 670px;
 }
 .menu .container-menu .menu_block {
     display: flex;
     flex-direction: column;
-    gap: 60px;    
+    gap: 3.75rem;
 }
 .menu .container-menu .menu_block .menu_slog {
     margin-right: auto;
 }
 .menu .container-menu .menu_block .menu_slog h2 {
-    font-size: 36px;
+    font-size: 2.25rem;
     font-weight: 900;
     letter-spacing: 0.1em;
 }
@@ -191,7 +190,7 @@
 .menu .container-menu .menu_block .menu_list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 60px;
+    gap: 3.75rem;
 }
 .menu .container-menu .menu_block .menu_list .menu_card {
     display: flex;
@@ -199,7 +198,7 @@
     width: 100%;
     height: auto;
     align-items: center;
-    gap: 20px;
+    gap: 1.25rem;
 }
 .menu .container-menu .menu_block .menu_list .menu_card:hover {
     opacity: 75%;
@@ -211,7 +210,7 @@
     object-fit: cover;
 }    
 .menu .container-menu .menu_block menu_list .menu_card h4 {
-    font-size: 16px;
+    font-size: 1rem;
     letter-spacing: 0.1em;
 }
 .menu .container-menu .menu_block .menu_button {
@@ -220,7 +219,7 @@
     background-color: #f90;
     border: none;
 
-    font-size: 16px;
+    font-size: 1rem;
     letter-spacing: 0.1em;
     text-decoration: none;
     color: #fff;

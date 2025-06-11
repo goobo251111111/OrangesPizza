@@ -39,8 +39,7 @@
                 <h3>起司披薩專門店</h3>
                 <h1>超濃．起司<br>披薩</h1>
             </div>
-            <!-- <div class="hero_button"><a href="menu.html">馬上點餐</a></div>             -->
-            <a class="hero_button" href="menu.html">馬上點餐</a>
+            <a class="hero_button" href="menu.html?pizza=margherita">馬上點餐</a>
         </div>
     </section>
     <section class="promo">
@@ -52,13 +51,13 @@
                     <div class="promo_lilbox box2"><a href=>#OrangesPizza</a></div>                
                 </div>
 
-                <div class="coupon_box">
+                <form class="coupon_box" action="#" method="post">
                     <div class="coupon_title"><h3>優惠碼</h3></div>
                     <div class="coupon_input">
-                        <input type="text" placeholder="coupon">
-                        <button class="coupon_button">輸入</button>
+                        <input type="text" id="coupon" name="coupon" placeholder="coupon" maxlength="12">
+                        <button type="submit" class="coupon_button">輸入</button>
                     </div>
-                </div>
+                </form>
             </div>
         </div>
     </section>

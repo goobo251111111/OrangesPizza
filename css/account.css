@@ -1,104 +1,106 @@
 .heading {
     width: 100%;
-    margin-top: 66px;
+    margin-top: 4rem;
 }
 .heading .heading_text {
     display: flex;
     justify-content: center;
-    padding: 66px 0;
+    padding: 4rem 0;
 }
 .heading .heading_text h1{
-    font-size: 32px;
+    font-size: 2rem;
     font-weight: 900;
     letter-spacing: 0.1em;
-    text-decoration: 4px #f90 underline;
+    text-decoration: 0.25rem #f90 underline;
 }
-.account {
+.login {
     width: 100%;
-    margin-bottom: 132px
+    margin-bottom: 8rem;
 }
-.account .container-account {
+.login .container-login {
     width: 25%;
     margin: auto;
     min-width: 300px;
 }
-.account .container-account .account_form {
+.login .container-login .login_form {
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 2rem;
 }
-.account .container-account .account_form .acc {
+.login .container-login .login_form .acc {
     display: flex;
     flex-direction: column;
-    gap: 4px;
+    gap: 0.125rem;
 }
-.account .container-account .account_form .acc input {
-    height: 56px;
-    padding: 0 0.75em;
+.login .container-login .login_form .acc input {
+    height: 3rem;
+    padding: 0 0.75rem;
+    border: 1px solid #000;
     border-radius: 0;
 }
-.account .container-account .account_form .acc input:focus {
+.login .container-login .login_form .acc input:focus {
     outline: none;
 }
-.account .container-account .account_form .pass {
+.login .container-login .login_form .pass {
     display: flex;
     flex-direction: column;
-    gap: 4px;
+    gap: 0.125rem;
 }
-.account .container-account .account_form .pass input {
-    height: 56px;
-    padding: 0 0.75em;
+.login .container-login .login_form .pass input {
+    height: 3rem;
+    padding: 0 0.75rem;
+    border: 1px solid #000;
     border-radius: 0;
 }
-.account .container-account .account_form .pass input:focus {
+.login .container-login .login_form .pass input:focus {
     outline: none;
 }
-.account .container-account .account_form .pass .labelrow {
+.login .container-login .login_form .pass .labelrow {
     display: flex;
     position: relative;
     /* justify-content: space-between; */
 }
-.account .container-account .account_form .pass .labelrow a {
+.login .container-login .login_form .pass .labelrow a {
     position: absolute;
     top: 0;
     right: 0;
     text-decoration: none;
     color: #000;
 }
-.account .container-account .account_form .pass .labelrow a:hover {
+.login .container-login .login_form .pass .labelrow a:hover {
     color: #a10;
 } 
-.account .container-account .account_form .submit {
+.login .container-login .login_form .submit {
     width: 100%;
-    margin: 30px 0 60px;
+    margin: 2rem 0 4rem;
 }
-.account .container-account .account_form .submit button {
+.login .container-login .login_form .submit button {
     all: unset;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
-    padding: 0.75em 0;
+    padding: 0.7em 0;
     background-color: #f90;
     
-    font-size: 24px;
+    font-size: 1.5rem;
     letter-spacing: 0.1em;
     text-decoration: none;
     color: #fff;
 
     cursor: pointer;
 }
-.account .container-account .account_form .submit button:hover {
+.login .container-login .login_form .submit button:hover {
     background-color: #a10;
 }
-.account .container-account .account_others {
+.login .container-login .login_others {
     display: flex;
     justify-content: center;
-    margin-bottom: 132px;
+    margin-bottom: 8rem;
 }
-.account .container-account .account_others a {
+.login .container-login .login_others a {
     color: #000;
 }
-.account .container-account .account_others a:hover {
+.login .container-login .login_others a:hover {
     color:#a10;
 }

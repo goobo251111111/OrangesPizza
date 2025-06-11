@@ -1,21 +1,21 @@
 .heading {
     width: 100%;
-    margin-top: 66px;
+    margin-top: 4rem;
 }
 .heading .heading_text {
     display: flex;
     justify-content: center;
-    padding: 66px 0;
+    padding: 4rem 0;
 }
 .heading .heading_text h1{
-    font-size: 32px;
+    font-size: 2rem;
     font-weight: 900;
     letter-spacing: 0.1em;
-    text-decoration: 4px #f90 underline;
+    text-decoration: 0.25rem #f90 underline;
 }
 .stores {
     width: 100%;
-    margin-bottom: 132px;
+    margin-bottom: 8rem;
 }
 .stores .container-stores {
     width: 67%;
@@ -24,7 +24,7 @@
 }
 .stores .container-stores .stores_info {
     display: flex;
-    gap: 40px;
+    gap: 2.5rem;
 }
 .stores .container-stores .stores_info .stores_pic {
     width: 46%;
@@ -45,25 +45,25 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 10px 0;
+    padding: 0.75rem 0;
 }
 .stores .container-stores .stores_info .stores_list .stores_item {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 0.75rem;
 }
 
 .stores .container-stores .stores_info .stores_list .stores_item .stores_name h2 {
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 900;
     letter-spacing: 0.1em;
 }
 .stores .container-stores .stores_info .stores_list .stores_item .stores_address {
     display: flex;
-    gap: 1em;
+    gap: 1rem;
 }
 .stores .container-stores .stores_info .stores_list .stores_item .stores_address p {
-    font-size: 20px;
+    font-size: 1.25rem;
     letter-spacing: 0.1em;
     text-decoration: underline;
 }
