@@ -120,11 +120,11 @@
     padding: 0.5rem 0;
     gap: 1.5rem;
 }
-.modal_content .modal_text #name {
+.modal_content .modal_text .name {
     font-size: 1.5rem;
     letter-spacing: 0.1em;
 }
-.modal_content .modal_text #price {
+.modal_content .modal_text .price {
     font-size: 1.5rem;
     font-weight: 900;
     letter-spacing: 0.1em;

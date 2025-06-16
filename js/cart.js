@@ -1,44 +1,56 @@
-window.addEventListener('DOMContentLoaded', function () {
-    const tableBody = document.querySelector('.table_body');
-    const cart = JSON.parse(localStorage.getItem('cart')) || [];
+let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
-    if (cart.length === 0) {
-    tableBody.innerHTML = '<p>購物車是空的</p>';
-    return;
-    }
+const tableBody = document.querySelector(".table_body");
+const tableFoot = document.querySelector(".table_foot");
 
-let html = `
-    <div class="table_row head">
-        <div>品項</div>
-        <div>數量</div>
-        <div>單價</div>
-        <div>小計</div>
-        <div>操作</div>
-    </div>
-    `;
+function updateCart() {
+    tableBody.innerHTML = "";
 
-cart.forEach((item, index) => {
-    html += `
-        <div class="table_row">
-            <div>${item.name}</div>
-            <div>${item.quantity}</div>
-            <div>$${item.price}</div>
-            <div>$${item.price * item.quantity}</div>
-            <div><button data-index="${index}">刪除</button></div>
-        </div>
-    `;
+    cart.forEach((item, index) => {
+        const tr = document.createElement("div");
+        tr.classList.add("tr");
+        tr.dataset.index = index;
+        tr.innerHTML = `
+            <div class="td name">${item.name}</div>
+            <div class="td price">$${item.price}</div>
+            <div class="td quantity">${item.quantity}</div>
+            <div class="td subtotal">$${item.price * item.quantity}</div>
+            <div class="td delete"><span class="remove_button">&times;</span></div>
+        `;
+        tableBody.appendChild(tr);
     });
 
-    tableBody.innerHTML = html;
-});
+    function updateTotal() {
+        const total = cart.reduce((sum, item) => (sum + item.price * item.quantity), 0);
+        tableFoot.innerHTML = `
+            <div class="tr">
+                <div class="td total">總計　$${total}</div>
+            </div>
+        `;
+    };
+    updateTotal();
+}
 
-// 刪除功能
-document.querySelector('.table_body').addEventListener('click', function (e) {
-    if (e.target.tagName === 'BUTTON') {
-        const index = e.target.dataset.index;
-        const cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+
+function removeProduct() {
+    function removeItem(index) {
         cart.splice(index, 1);
-        localStorage.setItem('cart', JSON.stringify(cart));
-        location.reload();
+        localStorage.setItem("cart", JSON.stringify(cart));
+        updateCart();
     }
-});
+    tableBody.addEventListener("click", function (e) {
+        if (e.target.classList.contains("remove_button")) {
+            const tr = e.target.closest(".tr");
+            const index = parseInt(tr.dataset.index);
+            removeItem(index);
+        }
+    });
+}
+
+function initCart() {
+    updateCart();
+    removeProduct();
+}
+
+initCart();

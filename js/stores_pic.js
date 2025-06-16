@@ -16,6 +16,6 @@ function imageSwitch () {
             }, 250);
         });
     });    
-};
+}
 
 imageSwitch();

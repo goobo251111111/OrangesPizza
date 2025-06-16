@@ -21,15 +21,15 @@
             </div>
             <!-- <nav class="header_list"> -->
             <ul class="header_list">
-                <li><a href="news.html" alt="news">最新優惠</a></li>
-                <li><a href="menu.html" alt="menu">菜單</a></li>
-                <li><a href="stores.html" alt="stores">門市</a></li>
-                <li><a href="about.html" alt="about">關於</a></li>
+                <li><a href="news.html" aria-label="news">最新優惠</a></li>
+                <li><a href="menu.html" aria-label="menu">菜單</a></li>
+                <li><a href="stores.html" aria-label="stores">門市</a></li>
+                <li><a href="about.html" aria-label="about">關於</a></li>
             </ul>
             <!-- </nav>     -->
             <div class="header_utility">
-                <div class="account-icon"><a href="account.html"><img src="images/acc.svg" alt="account"></a></div>
-                <div class="cart-icon"><a href="cart.html"><img src="images/cart.svg" alt=cart"></a></div>
+                <div class="account-icon"><a href="account.html" aria-label="account"><img src="images/acc.svg" alt="account"></a></div>
+                <div class="cart-icon"><a href="cart.html" aria-label="cart"><img src="images/cart.svg" alt=cart"></a></div>
             </div>                
         </div>
     </header>
@@ -180,21 +180,21 @@
                     </div>                    
                 </div>
             </div>
-            <div id="modal" class="modal" onclick="closeModal()">
+            <div class="modal" onclick="closeModal()">
                 <div class="modal_content">
                     <div class="modal_pic">
-                        <img id="img" src="" alt="">
+                        <img class="img" src="" alt="">
                     </div>
                     <div class="modal_text">
-                        <h2 id="name"></h2>
-                        <p id="price"></p>
+                        <h2 class="name"></h2>
+                        <p class="price"></p>
                         <div class="description">
-                            <p id="desc1"></p><br>
-                            <p id="desc2"></p>
+                            <p class="desc1"></p><br>
+                            <p class="desc2"></p>
                         </div>
                         <form class="quantity_input">
                             <label for="quantity"></label>
-                            <input type="number" id="quantity" min="1" value="1">
+                            <input type="number" class="quantity" id="quantity" min="1" value="1">
                             <button type="button" onclick="addToCart()">加入</button>
                         </form>
                         <div class="close" onclick="closeModal()">&times;</div>

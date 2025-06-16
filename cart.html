@@ -21,15 +21,15 @@
             </div>
             <!-- <nav class="header_list"> -->
             <ul class="header_list">
-                <li><a href="news.html" alt="news">最新優惠</a></li>
-                <li><a href="menu.html" alt="menu">菜單</a></li>
-                <li><a href="stores.html" alt="stores">門市</a></li>
-                <li><a href="about.html" alt="about">關於</a></li>
+                <li><a href="news.html" aria-label="news">最新優惠</a></li>
+                <li><a href="menu.html" aria-label="menu">菜單</a></li>
+                <li><a href="stores.html" aria-label="stores">門市</a></li>
+                <li><a href="about.html" aria-label="about">關於</a></li>
             </ul>
             <!-- </nav>     -->
             <div class="header_utility">
-                <div class="account-icon"><a href="account.html"><img src="images/acc.svg" alt="account"></a></div>
-                <div class="cart-icon"><a href="cart.html"><img src="images/cart.svg" alt="cart"></a></div>
+                <div class="account-icon"><a href="account.html" aria-label="account"><img src="images/acc.svg" alt="account"></a></div>
+                <div class="cart-icon"><a href="cart.html" aria-label="cart"><img src="images/cart.svg" alt="cart"></a></div>
             </div>                
         </div>
     </header>
@@ -60,33 +60,26 @@
             <div class="cart_table">
                 <div class="table_head">
                     <div class="tr">
-                        <div class="th product_name">餐點名稱</div>
-                        <div class="th product_price">單價</div>
-                        <div class="th product_quantity">數量</div>
-                        <div class="th product_subtotal">小計</div>
-                        <div class="th product_delete"></div>
+                        <div class="th name">餐點名稱</div>
+                        <div class="th price">單價</div>
+                        <div class="th quantity">數量</div>
+                        <div class="th subtotal">小計</div>
+                        <div class="th delete"></div>
                     </div>
                 </div>
                 <div class="table_body">
-                    <div class="tr">
-                        <div class="td product_name">瑪格麗特</div>
-                        <div class="td product_price">$200</div>
-                        <div class="td product_quantity">1</div>
-                        <div class="td product_subtotal">$200</div>
-                        <div class="td product_delete">Ｘ</div>
-                    </div>
-                    <div class="tr">
-                        <div class="td product_name">海鮮</div>
-                        <div class="td product_price">$200</div>
-                        <div class="td product_quantity">10</div>
-                        <div class="td product_subtotal">$2000</div>
-                        <div class="td product_delete">Ｘ</div>
-                    </div>
+                    <!-- <div class="tr">
+                        <div class="td name">瑪格麗特</div>
+                        <div class="td price">$200</div>
+                        <div class="td quantity">1</div>
+                        <div class="td subtotal">$200</div>
+                        <div class="td delete"><span class="remove_button">&times;</span></div>
+                    </div> -->
                 </div>
                 <div class="table_foot">
-                    <div class="tr">
-                        <div class="td product_total">總計　$2200</div>
-                    </div>
+                    <!-- <div class="tr">
+                        <div class="td  total">總計　$200</div>
+                    </div> -->
                 </div>
             </div>
             <button class="cart_button">下一步</button>
@@ -110,6 +103,6 @@
             </div>
         </div>
     </footer>
-    <!-- <script src="js/cart.js"></script> -->
+    <script src="js/cart.js"></script>
 </body>
 </html>
