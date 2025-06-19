@@ -36,6 +36,7 @@
     border-bottom: 1px solid #000;
 }
 .news .container-news .news_board .news_card:hover {
+    box-shadow: 0 0 1em 0 #fda;
     background-color: #fda;
 }
 .news .container-news .news_board .news_card .news_pic {

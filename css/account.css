@@ -41,6 +41,7 @@
 }
 .login .container-login .login_form .login_input input:focus {
     outline: none;
+    border: 2px solid #000;
 }
 
 .login .container-login .login_form .login_input .error1 {

@@ -1,6 +1,10 @@
 * {
     box-sizing: border-box;
 }
+::selection {
+    background-color: #f90;
+    color: white;
+}
 body {
     font-family: "Noto Sans TC", "Roboto", sans-serif;
 }
@@ -64,7 +68,6 @@ header .container-header .header_utility img {
     display: block;
     height: 1rem;
 }
-
 
 footer {
     width: 100%;

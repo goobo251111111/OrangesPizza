@@ -19,8 +19,8 @@ const correctPassword = "0987654321";
     });
 });
 
-form.addEventListener("submit", function(event) {
-    event.preventDefault();
+form.addEventListener("submit", function(e) {
+    e.preventDefault();
 
     let valid = true;
 

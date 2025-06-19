@@ -43,6 +43,7 @@
             <div class="menu_list">
                 <div class="menu_card peperoni"
                     onclick="openModal(this)"
+                    data-uid="peperoni"
                     data-img="images/menu_peperoni.png"
                     data-name="臘腸 Peperoni"
                     data-price="200"
@@ -57,6 +58,7 @@
                 </div>
                 <div class="menu_card seafood"
                     onclick="openModal(this)"
+                    data-uid="seafood"
                     data-img="images/menu_seafood.png"
                     data-name="海鮮 Seafood"
                     data-price="200"
@@ -71,6 +73,7 @@
                 </div>
                 <div class="menu_card margherira"
                     onclick="openModal(this)"
+                    data-uid="margherita"
                     data-img="images/menu_margherita.png"
                     data-name="瑪格麗特 Margherita"
                     data-price="200"
@@ -85,6 +88,7 @@
                 </div>
                 <div class="menu_card marinara"
                     onclick="openModal(this)"
+                    data-uid="marinara"
                     data-img="images/menu_marinara.png"
                     data-name="瑪莉娜拉 Marinara"
                     data-price="200"
@@ -97,6 +101,7 @@
                 </div>
                 <div class="menu_card chicken"
                     onclick="openModal(this)"
+                    data-uid="chicken"
                     data-img="images/menu_chicken.png"
                     data-name="烤雞 Chicken"
                     data-price="200"
@@ -111,6 +116,7 @@
                 </div>
                 <div class="menu_card meatlover"
                     onclick="openModal(this)"
+                    data-uid="meatlover"
                     data-img="images/menu_meatlover.png"
                     data-name="總匯 Meatlover"
                     data-price="200"
@@ -125,6 +131,7 @@
                 </div>
                 <div class="menu_card bacon"
                     onclick="openModal(this)"
+                    data-uid="bacon"
                     data-img="images/menu_bacon.png"
                     data-name="培根 Bacon"
                     data-price="200"
@@ -139,6 +146,7 @@
                 </div>
                 <div class="menu_card mushroom"
                     onclick="openModal(this)"
+                    data-uid="mushroom"
                     data-img="images/menu_mushroom.png"
                     data-name="蘑菇 Mushroom"
                     data-price="200"
@@ -153,6 +161,7 @@
                 </div>
                 <div class="menu_card mexican"
                     onclick="openModal(this)"
+                    data-uid="mexican"
                     data-img="images/menu_mexican.png"
                     data-name="墨西哥 Mexican"
                     data-price="200"
@@ -167,6 +176,7 @@
                 </div>
                 <div class="menu_card hawaiiann"
                     onclick="openModal(this)"
+                    data-uid="hawaiiann"
                     data-img="images/menu_hawaiian.png"
                     data-name="夏威夷 Hawaiian"
                     data-price="200"
@@ -194,7 +204,7 @@
                         </div>
                         <form class="quantity_input">
                             <label for="quantity"></label>
-                            <input type="number" class="quantity" id="quantity" min="1" value="1">
+                            <input type="number" class="quantity" uid="quantity" min="1" value="1">
                             <button type="button" onclick="addToCart()">加入</button>
                         </form>
                         <div class="close" onclick="closeModal()">&times;</div>
@@ -221,6 +231,6 @@
             </div>   
         </div>
     </footer>
-<script src="js/menu_modal.js"></script>        
+<script src="js/menu.js"></script>        
 </body>
 </html>

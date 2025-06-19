@@ -17,6 +17,7 @@
     font-size: 1.5rem;
     font-weight: 900;
     letter-spacing: 0.1em;
+    text-shadow: 0 0 0.2em #ddd;    
     color: #fff;
 
     margin-left: 0.5em;
@@ -27,11 +28,13 @@
     font-weight: 900;
     letter-spacing: 0.1em;
     line-height: 1.25em;
+    text-shadow: 0 0 0.1em #ddd;
     color: #fff;
 }
 .hero .hero_wrap .hero_button {
     display: block;
     padding: 0.7em 0;
+    box-shadow: 0 0 0.5em #f90;
     background-color: #f90;
     border: none;
 
@@ -44,7 +47,9 @@
     margin-top: 0.75em;
 }
 .hero .hero_wrap .hero_button:hover {
+    box-shadow: 0 0 0.5em #a10;
     background-color: #a10;
+    
 }
 .promo{
     width: 100%;
@@ -151,6 +156,7 @@
     padding: 0.75em 2em;
     border: none;
     box-sizing: border-box;
+    /* box-shadow: 0 0 0.75em 0 #f90; */
     background-color: #f90;
 
     font-size: 1rem;
@@ -161,6 +167,7 @@
     cursor: pointer;
 }
 .promo .container-promo .promo_block .coupon_box .coupon_input .coupon_button:hover {
+    /* box-shadow: 0 0 0.5em #a10; */
     background-color: #a10;
 }
 .menu {
@@ -227,5 +234,6 @@
     margin-left: auto;
 }
 .menu .container-menu .menu_block .menu_button:hover {
+    /* box-shadow: 0 0 0.5em #a10; */
     background-color: #a10;
 }

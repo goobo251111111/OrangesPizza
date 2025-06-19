@@ -31,8 +31,6 @@ function updateCart() {
     updateTotal();
 }
 
-
-
 function removeProduct() {
     function removeItem(index) {
         cart.splice(index, 1);
@@ -46,6 +44,14 @@ function removeProduct() {
             removeItem(index);
         }
     });
+}
+
+function nextStep() {
+    if (cart.length === 0) {
+        alert("購物車目前是空的！");
+        return;
+    }
+    window.location.href = "pickup.html";
 }
 
 function initCart() {
