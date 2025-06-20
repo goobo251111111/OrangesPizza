@@ -1,29 +1,49 @@
+const methods = document.querySelectorAll(".method");
+
+const dateSelect = document.getElementById("date");
+const timeSelect = document.getElementById("time");
+const storeSelect = document.getElementById("store");
+const addressInput = document.getElementById("address");
+
+const errorS = document.querySelector(".errorS");
+const errorA = document.querySelector(".errorA");
+
 function nextStep() {
-    const date = document.querySelector("#date");
-    const time = document.querySelector("#time");
-    const store = document.querySelector("#store");
-    const address = document.querySelector("#address");
+
+    errorS.style.display = "none";
+    errorA.style.display = "none";
+    
+    if (!storeSelect.disabled && storeSelect.value === "") {
+        errorS.style.display = "block";
+    }
+    if (!addressInput.disabled && addressInput.value.trim() === "") {
+        errorA.style.display = "block";
+    }
 
     if (
-        (!date.disabled && date.value === "") ||
-        (!time.disabled && time.value === "") ||
-        (!store.disabled && store.value === "") ||
-        (!address.disabled && address.value.trim() === "")
+        (!dateSelect.disabled && dateSelect.value === "") ||
+        (!timeSelect.disabled && timeSelect.value === "") ||
+        (!storeSelect.disabled && storeSelect.value === "") ||
+        (!addressInput.disabled && addressInput.value.trim() === "")
     ) {
-        alert("請填寫完整資訊！");
         return;
     }
 
     window.location.href = "checkout.html";
 }
+
 function prevStep() {
     window.location.href = "cart.html";
 }
 
-function selectPickupMethod(method) {
-    const methods = document.querySelectorAll(".method");
-    const addressInput = document.getElementById("address");
-    const storeSelect = document.getElementById("store");
+window.addEventListener("click", function () {
+    setTimeout(() => {
+        if (errorS) errorS.style.display = "none";
+        if (errorA) errorA.style.display = "none";
+    }, 5000);
+});
+
+function changeMethod(method) {
 
     methods.forEach(m => m.classList.remove("active"));
 
@@ -31,16 +51,16 @@ function selectPickupMethod(method) {
         methods[1].classList.add("active");
         addressInput.disabled = false;
         storeSelect.disabled = true;
+        storeSelect.value = "";
     } else {
         methods[0].classList.add("active");
+        storeSelect.disabled = false;
         addressInput.disabled = true;
         addressInput.value = "";
-        storeSelect.disabled = false;
     }
 }
 
 function updateTime(selectedDateStr) {
-    const timeSelect = document.getElementById("time");
     timeSelect.innerHTML = "";
 
     const now = new Date();
@@ -90,7 +110,6 @@ function updateTime(selectedDateStr) {
 }
 
 window.addEventListener("DOMContentLoaded", function () {
-    const dateSelect = document.getElementById("date");
 
     const today = new Date();
     for (let i = 0; i < 5; i++) {

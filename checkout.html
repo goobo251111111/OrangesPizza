@@ -19,6 +19,7 @@
                 <img src="images/OrangesPizza.svg" alt="logo">
                 </a>
             </div>
+            <input type="checkbox" id="checkbox" class="checkbox"/>
             <!-- <nav class="header_list"> -->
             <ul class="header_list">
                 <li><a href="news.html" aria-label="news">最新優惠</a></li>
@@ -29,8 +30,13 @@
             <!-- </nav>     -->
             <div class="header_utility">
                 <div class="account-icon"><a href="account.html" aria-label="account"><img src="images/acc.svg" alt="account"></a></div>
-                <div class="checkout-icon"><a href="cart.html" aria-label="cart"><img src="images/cart.svg" alt="cart"></a></div>
-            </div>                
+                <div class="cart-icon"><a href="cart.html" aria-label="cart"><img src="images/cart.svg" alt="cart"></a></div>
+            </div>
+            <div class="header_toggle">
+                <label for="checkbox" class="burger" aria-label="burgar">
+                    <span></span><span></span><span></span>
+                </label>
+            </div>
         </div>
     </header>
     <section class="step">
@@ -60,20 +66,23 @@
             <div class="checkout_table">
                 <div class="table_row checkout_name">
                     <label for="name">姓名：</label>
-                    <input type="text" id="name" name="name" maxlength="20"/>                  
+                    <input type="text" id="name" name="name" maxlength="20"/>
+                    <small class="error1 errorN">請輸入姓名</small>                  
                 </div>
                 <div class="table_row checkout_phonenum">
                     <label for="phonenum">電話：</label>
                     <input type="text" id="phonenum" name="phonenum" inputmode="numeric" pattern="[0-9]*" maxlength="10"/>
+                    <small class="error1 errorPh">請輸入電話</small>
                 </div>
                 <fieldset class="table_row checkout_receipt">
                     <legend>統一發票：
                         <input type="radio" id="paper-receipt" name="receipt"/>
                         <label for="paper-receipt">電子發票</label>
                         <input type="radio" id="mobile-barcode" name="receipt" disabled/>
-                        <label for="mobile-barcode">手機條碼</label>
+                        <label for="mobile-barcode" style="color: #ddd;">手機條碼</label>
                         <!-- <input type="text" id="barcode" disabled> -->
                     </legend>
+                    <small class="error1 errorR">請選擇發票載具</small>
                 </fieldset>
                 <div class="table_row checkout_tax-id">
                     <label for="tax-id">統一編號：</label>
@@ -84,10 +93,9 @@
                         <input type="radio" id="cash" name="pay"/>
                         <label for="cash">現場付款</label>
                         <input type="radio" id="creditcard" name="pay" disabled/>
-                        <label for="creditcard">線上刷卡</label>
-                        <input type="radio" id="monile-pay" name="pay" disabled/>   
-                        <label for="monile-pay">行動支付</label>
+                        <label for="creditcard" style="color: #ddd;">線上刷卡</label>
                     </legend>
+                    <small class="error1 errorPa">請選擇付款方式</small>
                 </fieldset>
             </div>
             <div class="checkout_buttons">

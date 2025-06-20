@@ -49,14 +49,15 @@
     flex-direction: column;
     width: 100%;
     aspect-ratio: 10 / 7.5;
-    border-top: 1px solid #bbb;
+    border-top: 1px solid #ddd;
 }
 .checkout .container-checkout .checkout_table .table_row {
     display: flex;
+    position: relative;
     align-items: center;
     height: 20%;
     padding-left: 4rem;
-    border-bottom: 1px solid #bbb;
+    border-bottom: 1px solid #ddd;
     font-size: 1rem;
 }
 .checkout .container-checkout .checkout_table .checkout_name,
@@ -85,6 +86,9 @@
     outline: none;
     border: 2px solid #000;
 }
+.checkout .container-checkout .checkout_table .table_row input[type="text"]::placeholder {
+    color: #ddd;
+}
 .checkout .container-checkout .checkout_table .table_row input[type="radio"] {
     margin-left: 3rem;
     margin-right: 0.5rem;
@@ -102,6 +106,13 @@
 .checkout .container-checkout .checkout_table .table_row input[type="radio"]:checked {
     box-shadow: 0 0 4px 0 #f90;
     background-color: #f90;
+}
+.checkout .container-checkout .checkout_table .table_row .error1 {
+    display: none;
+    position: absolute;
+    right: 4%;
+    font-size: 0.75rem;
+    color: #a10;
 }
 .checkout .container-checkout .checkout_buttons {
     display: flex;

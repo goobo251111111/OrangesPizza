@@ -19,6 +19,7 @@
                 <img src="images/OrangesPizza.svg" alt="logo">
                 </a>
             </div>
+            <input type="checkbox" id="checkbox" class="checkbox"/>
             <!-- <nav class="header_list"> -->
             <ul class="header_list">
                 <li><a href="news.html" aria-label="news">最新優惠</a></li>
@@ -30,7 +31,12 @@
             <div class="header_utility">
                 <div class="account-icon"><a href="account.html" aria-label="account"><img src="images/acc.svg" alt="account"></a></div>
                 <div class="cart-icon"><a href="cart.html" aria-label="cart"><img src="images/cart.svg" alt="cart"></a></div>
-            </div>                
+            </div>
+            <div class="header_toggle">
+                <label for="checkbox" class="burger" aria-label="burgar">
+                    <span></span><span></span><span></span>
+                </label>
+            </div>
         </div>
     </header>
     <section class="step">
@@ -61,8 +67,8 @@
                 <div class="table_row pickup_method">
                     <div>取餐方式：</div>
                     <div class="methods">
-                        <button type="button" class="method active" name="method" value="pickup" onclick="selectPickupMethod('pickup')">外帶</button>
-                        <button type="button" class="method" name="method" value="dropoff" onclick="selectPickupMethod('dropoff')">外送</button>
+                        <button type="button" class="method active" name="method" value="pickup" onclick="changeMethod('pickup')">外帶</button>
+                        <button type="button" class="method" name="method" value="dropoff" onclick="changeMethod('dropoff')">外送</button>
                     </div>
                 </div>
                 <div class="table_row pickup_datetime">
@@ -75,15 +81,17 @@
                 <div class="table_row pickup_store">
                     <label for="store">取餐門市：</label>
                     <select id="store" name="store" required>
-                        <option value="">選擇門市</option>
+                        <option value=""></option>
                         <option value="taipei">台北 木柵旗艦店</option>
                         <option value="taichung">台中 科博店</option>
                         <option value="tainan">台南 孔廟店</option>
                     </select>
+                    <small class="error1 errorS">請輸入取餐門市</small>
                 </div>
                 <div class="table_row dropoff_address">
                     <label for="address">外送地址：</label>
                     <input type="text" id="address" name="address" placeholder="輸入地址" disabled required/>
+                    <small class="error1 errorA">請輸入外送地址</small>
                 </div>
             </div>
             <div class="pickup_buttons">

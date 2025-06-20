@@ -19,6 +19,7 @@
                 <img src="images/OrangesPizza.svg" alt="logo">
                 </a>
             </div>
+            <input type="checkbox" id="checkbox" class="checkbox"/>
             <!-- <nav class="header_list"> -->
             <ul class="header_list">
                 <li><a href="news.html" aria-label="news">最新優惠</a></li>
@@ -30,6 +31,11 @@
             <div class="header_utility">
                 <div class="account-icon"><a href="account.html" aria-label="account"><img src="images/acc.svg" alt="account"></a></div>
                 <div class="cart-icon"><a href="cart.html" aria-label="cart"><img src="images/cart.svg" alt="cart"></a></div>
+            </div>
+            <div class="header_toggle">
+                <label for="checkbox" class="burger" aria-label="burgar">
+                    <span></span><span></span><span></span>
+                </label>
             </div>
         </div>
     </header>
@@ -45,7 +51,7 @@
                     <div class="labelrow">
                         <label for="account">帳號</label>
                     </div>
-                    <input type="text" id="account" name="account" maxlength="12">
+                    <input type="text" id="account" name="account" maxlength="24">
                     <small class="error1 errorA">請輸入帳號</small>
                 </div>
                 <div class="login_input pass">
@@ -53,7 +59,7 @@
                         <label for="password">密碼</label>
                         <a href="#">忘記密碼？</a>
                     </div>
-                    <input type="password" id="password" name="password" maxlength="20">
+                    <input type="password" id="password" name="password" maxlength="40">
                     <small class="error1 errorP">請輸入密碼</small>
                     <small class="error2">請確認帳號或密碼是否有誤</small>
                 </div>

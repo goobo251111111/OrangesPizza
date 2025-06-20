@@ -22,12 +22,12 @@
     height: 2rem;
     font-size: 1.5rem;
     color: #fff;
-    background-color: #ddd;
+    background-color: #eee;
     border-radius: 50%;
 }
 .step .step_bar .step_item .step_text {
     font-size: 1.5rem;
-    color: #ddd;
+    color: #eee;
 }
 .step .step_bar .step_item.item2 .step_number {
     background-color: #000;
@@ -49,14 +49,15 @@
     flex-direction: column;
     width: 100%;
     aspect-ratio: 10 / 6;
-    border-top: 1px solid #bbb;
+    border-top: 1px solid #eee;
 }
 .pickup .container-pickup .pickup_table .table_row {
     display: flex;
+    position: relative;
     align-items: center;
     height: 25%;
     padding-left: 4rem;
-    border-bottom: 1px solid #bbb;
+    border-bottom: 1px solid #eee;
     font-size: 1rem;
 }
 .pickup .container-pickup .pickup_table .table_row .methods {
@@ -122,11 +123,25 @@
 }
 .pickup .container-pickup .pickup_table .table_row #store:disabled,
 .pickup .container-pickup .pickup_table .table_row #address:disabled {
+    color: #ccc;
     background-color: #eee;
 }
 .pickup .container-pickup .pickup_table .table_row #store option,
 .pickup .container-pickup .pickup_table .table_row #address option {
     appearance: none;
+}
+.pickup .container-pickup .pickup_table .table_row #store option:first-child {
+    color: #ccc;
+}
+.pickup .container-pickup .pickup_table .table_row #address::placeholder {
+    color: #ccc;
+}
+.pickup .container-pickup .pickup_table .table_row .error1 {
+    display: none;
+    position: absolute;
+    right: 4%;
+    font-size: 0.75rem;
+    color: #a10;
 }
 .pickup .container-pickup .pickup_buttons {
     display: flex;
