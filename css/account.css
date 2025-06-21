@@ -1,21 +1,21 @@
 .heading {
     width: 100%;
-    margin-top: 4rem;
+    margin-top: clamp(62px, 4rem, 68px);
 }
 .heading .heading_text {
     display: flex;
     justify-content: center;
-    padding: 4rem 0;
+    padding: clamp(62px, 4rem, 68px) 0;
 }
 .heading .heading_text h1{
-    font-size: 2rem;
+    font-size: clamp(30px, 2rem, 36px);
     font-weight: 900;
     letter-spacing: 0.1em;
-    text-decoration: 0.25rem #f90 underline;
+    text-decoration: 4px #f90 underline;
 }
 .login {
     width: 100%;
-    margin-bottom: 8rem;
+    margin-bottom: clamp(188px, 12rem, 196px);
 }
 .login .container-login {
     width: 25%;
@@ -25,17 +25,20 @@
 .login .container-login .login_form {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: clamp(30px, 2rem, 36px);
 }
 .login .container-login .login_form .login_input {
     display: flex;
     position: relative;
     flex-direction: column;
-    gap: 0.125rem;
+    gap: 2px;
+}
+.login .container-login .login_form .login_input label {
+    font-size: clamp(14px, 1rem, 16px);
 }
 .login .container-login .login_form .login_input input {
-    height: 3rem;
-    padding: 0 0.75rem;
+    height: clamp(46px, 3rem, 52px);
+    padding: 0 8px;
     border: 1px solid #000;
     border-radius: 0;
 }
@@ -43,29 +46,28 @@
     outline: none;
     border: 2px solid #000;
 }
-
 .login .container-login .login_form .login_input .error1 {
     display: none;
     position: absolute;
     top: 100%;
-    font-size: 0.75rem;
+    font-size: 12px;
     color: #a10;
 }
 .login .container-login .login_form .login_input .error2 {
     display: none;
     position: absolute;
     top: 125%;
-    font-size: 0.75rem;
+    font-size: 12px;
     color: #a10;
 }
 .login .container-login .login_form .login_input.pass .labelrow {
-    display: flex;
     position: relative;
 }
 .login .container-login .login_form .login_input.pass .labelrow a {
     position: absolute;
     top: 0;
     right: 0;
+    font-size: clamp(14px, 1rem, 16px);
     text-decoration: none;
     color: #000;
 }
@@ -74,7 +76,8 @@
 } 
 .login .container-login .login_form .login_submit {
     width: 100%;
-    margin: 2rem 0 4rem;
+    margin-top: clamp(30px, 2rem, 36px);
+    margin-bottom: clamp(62px, 4rem, 68px);
 }
 .login .container-login .login_form .login_submit button {
     all: unset;
@@ -85,7 +88,7 @@
     padding: 0.7em 0;
     background-color: #f90;
     
-    font-size: 1.5rem;
+    font-size: clamp(22px, 1.5rem, 28px);
     letter-spacing: 0.1em;
     text-decoration: none;
     color: #fff;
@@ -98,9 +101,9 @@
 .login .container-login .login_others {
     display: flex;
     justify-content: center;
-    margin-bottom: 8rem;
 }
 .login .container-login .login_others a {
+    font-size: clamp(14px, 1rem, 16px);
     color: #000;
 }
 .login .container-login .login_others a:hover {

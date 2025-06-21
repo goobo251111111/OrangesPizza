@@ -1,17 +1,17 @@
 .heading {
     width: 100%;
-    margin-top: 4rem;
+    margin-top: clamp(60px, 4rem, 68px);
 }
 .heading .heading_text {
     display: flex;
     justify-content: center;
-    padding: 4rem 0;
+    padding: clamp(60px, 4rem, 68px) 0;
 }
 .heading .heading_text h1{
-    font-size: 2rem;
+    font-size: clamp(28px, 2rem, 36px);
     font-weight: 900;
     letter-spacing: 0.1em;
-    text-decoration: 0.25rem #f90 underline;
+    text-decoration: 4px #f90 underline;
 }
 .stores {
     width: 100%;

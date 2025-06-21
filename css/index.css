@@ -70,7 +70,7 @@
     display: flex;
     align-items: center;
     aspect-ratio: 920 / 250;
-    padding-left: 20%;
+    padding-left: 10%;
     background-color: #eee;
     background-image: url("../images/promo_pic1.jpg");
     background-size: cover;
@@ -129,7 +129,6 @@
 }
 .promo .container-promo .promo_block .coupon_box .coupon_title {
     font-size: 1.5rem;
-    font-weight: 500;
     letter-spacing: 0.1em;
     color: #000;
 }
@@ -141,7 +140,7 @@
 }
 .promo .container-promo .promo_block .coupon_box .coupon_input input {
     all: unset;
-    width: 160px;
+    width: 50%;
     padding: 0 0.5rem;
     border: none;
     box-sizing: border-box;
