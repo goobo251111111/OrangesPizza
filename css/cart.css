@@ -171,9 +171,16 @@
 }
 
 @media screen and (max-width: 1024px) {
-
+    html {
+        font-size: 16px;
+    }
+    
 }
 @media screen and (max-width: 720px) {
+    html {
+        font-size: 12px;
+    }
+
     .step .step_bar,
     .cart .container-cart {
         min-width: 480px;
@@ -191,6 +198,10 @@
     }
 }
 @media screen and (max-width: 540px) {
+    html {
+        font-size: 10px;
+    }
+
     .step .step_bar,
     .cart .container-cart {
         min-width: 320px;

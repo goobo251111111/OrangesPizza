@@ -99,7 +99,7 @@
 }
 .checkout .container-checkout .checkout_table .table_row input[type="radio"] {
     margin-left: 3rem;
-    margin-right: 0.5rem;
+    /* margin-right: 2rem; */
 
     
     /* 隱藏預設 radio 按鈕 */
@@ -153,9 +153,15 @@
 }
 
 @media screen and (max-width: 1024px) {
-
+    html {
+        font-size: 16px;
+    }
 }
 @media screen and (max-width: 720px) {
+    html {
+        font-size: 12px;
+    }
+
     .step .step_bar,
     .checkout .container-checkout {
         min-width: 480px;
@@ -171,8 +177,32 @@
     .step .step_bar .step_item .step_text {
         font-size: 1.5rem;
     }
+
+    .checkout .container-checkout .checkout_table .table_row {
+        padding-left: 3rem;
+    }
+    .checkout .container-checkout .checkout_table .checkout_name,
+    .checkout .container-checkout .checkout_table .checkout_phonenum {
+        padding-left: 5rem;
+    }
+
+    .checkout .container-checkout .checkout_table .table_row input[type="text"] {
+        width: 22rem;
+        margin-left: 2rem;
+    }
+    .checkout .container-checkout .checkout_table .table_row input[type="radio"] {
+        margin-left: 2rem;
+    }
+
+    .checkout .container-checkout .checkout_table .table_row .error1 {
+        right: 0;
+    }
 }
 @media screen and (max-width: 540px) {
+    html {
+        font-size: 10px;
+    }
+    
     .step .step_bar,
     .checkout .container-checkout {
         min-width: 320px;
@@ -181,9 +211,23 @@
         width: 6%;
     }
 
-    .checkout .container-checkout .checkout_buttons .prev {
-        padding: 0.67em 1.7em;
+    .checkout .container-checkout .checkout_table .table_row {
+        padding-left: 1rem;
     }
+    .checkout .container-checkout .checkout_table .checkout_name,
+    .checkout .container-checkout .checkout_table .checkout_phonenum {
+        padding-left: 3rem;
+    }
+
+    .checkout .container-checkout .checkout_table .table_row input[type="text"] {
+        width: 19rem;
+        margin-left: 1rem;
+    }
+    .checkout .container-checkout .checkout_table .table_row input[type="radio"] {
+        margin-left: 1rem;
+    }
+
+    .checkout .container-checkout .checkout_buttons .prev,
     .checkout .container-checkout .checkout_buttons .next {
         padding: 0.67em 1.7em;
     }
