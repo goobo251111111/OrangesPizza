@@ -1,13 +1,13 @@
 .step {
     width: 100%;
-    margin-top: 4rem;
+    margin-top: clamp(62px, 4rem, 68px);
 }
 .step .step_bar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: auto;
-    padding: 4rem 0 2rem;
+    padding: clamp(62px, 4rem, 68px) 0 clamp(30px, 2rem, 36px);
 
     width: 50%;
     min-width: 640px;
@@ -45,7 +45,7 @@
 }
 .pickup {
     width: 100%;
-    margin-bottom: 4rem;
+    margin-bottom: clamp(62px, 4rem, 68px);
 }
 .pickup .container-pickup {
     width: 52%;
@@ -151,7 +151,7 @@
 .pickup .container-pickup .pickup_buttons {
     display: flex;
     justify-content: space-between;
-    margin-top: 2rem;
+    margin-top: clamp(30px, 2rem, 36px);
 }
 .pickup .container-pickup .pickup_buttons .button {
     all: unset;

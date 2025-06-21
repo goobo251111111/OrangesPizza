@@ -1,13 +1,13 @@
 .step {
     width: 100%;
-    margin-top: 4rem;
+    margin-top: clamp(62px, 4rem, 68px);
 }
 .step .step_bar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: auto;
-    padding: 4rem 0 2rem;
+    padding: clamp(62px, 4rem, 68px) 0 clamp(30px, 2rem, 36px);
 
     width: 50%;
     min-width: 640px;
@@ -45,7 +45,7 @@
 }
 .cart {
     width: 100%;
-    margin-bottom: 4rem;
+    margin-bottom: clamp(62px, 4rem, 68px);
 }
 .cart .container-cart {
     width: 52%;
@@ -152,7 +152,7 @@
 .cart .container-cart .cart_buttons {
     display: flex;
     justify-content: flex-end;
-    margin-top: 2rem;
+    margin-top: clamp(30px, 2rem, 36px);
 }
 .cart .container-cart .cart_buttons .next {
     all: unset;

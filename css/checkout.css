@@ -1,13 +1,13 @@
 .step {
     width: 100%;
-    margin-top: 4rem;
+    margin-top: clamp(62px, 4rem, 68px);
 }
 .step .step_bar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: auto;
-    padding: 4rem 0 2rem;
+    padding: clamp(62px, 4rem, 68px) 0 clamp(30px, 2rem, 36px);
 
     width: 50%;
     min-width: 640px;
@@ -45,7 +45,7 @@
 }
 .checkout {
     width: 100%;
-    margin-bottom: 4rem;
+    margin-bottom: clamp(62px, 4rem, 68px);
 }
 .checkout .container-checkout {
     width: 52%;
@@ -125,7 +125,7 @@
 .checkout .container-checkout .checkout_buttons {
     display: flex;
     justify-content: space-between;
-    margin-top: 2rem;
+    margin-top: clamp(30px, 2rem, 36px);
 }
 .checkout .container-checkout .checkout_buttons .button {
     all: unset;
@@ -202,7 +202,7 @@
     html {
         font-size: 10px;
     }
-    
+
     .step .step_bar,
     .checkout .container-checkout {
         min-width: 320px;
