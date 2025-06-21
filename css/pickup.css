@@ -130,9 +130,6 @@
 .pickup .container-pickup .pickup_table .table_row #address option {
     appearance: none;
 }
-.pickup .container-pickup .pickup_table .table_row #store option:first-child {
-    color: #ccc;
-}
 .pickup .container-pickup .pickup_table .table_row #address::placeholder {
     color: #ccc;
 }

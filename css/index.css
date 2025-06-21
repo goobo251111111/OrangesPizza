@@ -57,7 +57,7 @@
 .promo .container-promo {
     width: 67%;
     margin: 5.5rem auto;
-    min-width: 670px;
+    /* min-width: 670px; */
 }
 .promo .container-promo .promo_block {
     display: grid;
@@ -176,7 +176,7 @@
 .menu .container-menu {
     width: 67%;
     margin: 5.5rem auto;
-    min-width: 670px;
+    /* min-width: 670px; */
 }
 .menu .container-menu .menu_block {
     display: flex;
@@ -236,4 +236,15 @@
 .menu .container-menu .menu_block .menu_button:hover {
     /* box-shadow: 0 0 0.5em #a10; */
     background-color: #a10;
+}
+
+@media screen and (max-width: 720px) {
+    .hero .hero_wrap {
+        top: 30%;
+        left: 3%;
+    }
+}
+
+@media screen and (max-width: 540px) {
+
 }
