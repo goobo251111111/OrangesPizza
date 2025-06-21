@@ -64,12 +64,14 @@
     display: flex;
     gap: 1rem;
 }
-.stores .container-stores .stores_info .stores_list .stores_item .stores_address a {
+.stores .container-stores .stores_info .stores_list .stores_item .stores_address p {
     font-size: 1.25rem;
+    text-decoration: underline;
     letter-spacing: 0.1em;
     color: #000;
+    cursor: pointer;
 }
-.stores .container-stores .stores_info .stores_list .stores_item .stores_address a:hover {
+.stores .container-stores .stores_info .stores_list .stores_item .stores_address p:hover {
     box-shadow: 0 0 1em 0 #fda;
     background-color: #fda;
 } 
