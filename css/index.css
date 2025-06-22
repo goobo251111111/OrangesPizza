@@ -245,5 +245,7 @@
 }
 
 @media screen and (max-width: 480px) {
-
+    .hero {
+        background-image: url("../images/hero_pic1v.jpg");
+    }
 }
