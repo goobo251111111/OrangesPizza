@@ -71,12 +71,10 @@ header .container-header .header_utility img {
     display: block;
     height: clamp(16px, 1rem, 20px);
 }
-
 header .container-header .header_toggle,
 header .container-header .header_button {
     display: none;
 }
-
 header .container-header .header_burger {
     display: flex;
     align-items: flex-end;

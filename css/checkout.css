@@ -43,6 +43,7 @@
 .step .step_bar .step_item.item3 .step_text {
     color: #000;
 }
+
 .checkout {
     width: 100%;
     margin-bottom: clamp(62px, 4rem, 68px);

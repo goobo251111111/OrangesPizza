@@ -1,18 +1,19 @@
 .heading {
     width: 100%;
-    margin-top: clamp(60px, 4rem, 68px);
+    margin-top: clamp(62px, 4rem, 68px);
 }
 .heading .heading_text {
     display: flex;
     justify-content: center;
-    padding: clamp(60px, 4rem, 68px) 0;
+    padding: clamp(62px, 4rem, 68px) 0;
 }
 .heading .heading_text h1{
-    font-size: clamp(28px, 2rem, 36px);
+    font-size: clamp(30px, 2rem, 36px);
     font-weight: 900;
     letter-spacing: 0.1em;
     text-decoration: 4px #f90 underline;
 }
+
 .stores {
     width: 100%;
     margin-bottom: clamp(126px, 8rem, 132px);
@@ -52,7 +53,6 @@
     flex-direction: column;
     gap: 0.75rem;
 }
-
 .stores .container-stores .stores_info .stores_list .stores_item .stores_name h2 {
     font-size: clamp(22px, 1.5rem, 28px);
     font-weight: 900;
@@ -73,7 +73,7 @@
 }
 .stores .container-stores .stores_info .stores_list .stores_item .stores_address p:hover {
     box-shadow: 0 0 1em 0 #fda;
-    background-color: #fda;
+    background-color: #ffddaaaa;
 } 
 .stores .container-stores .stores_info .stores_list .stores_item .stores_address img {
     width: 0.9em;

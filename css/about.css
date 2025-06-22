@@ -1,70 +1,67 @@
 .banner {
     width: 100%;
-    margin-top: 96px;
-    margin-bottom: 64px;
+    margin-top: clamp(94px, 6rem, 100px);
+    margin-bottom: clamp(62px, 4rem, 68px);
 }
-.banner .banner_wrap {
-    position: relative;
-    width: 75%;
+.banner .banner_area {
+    width: 65%;
     aspect-ratio: 3 / 1;
     margin: auto;
+    min-width: 700px;
+    max-width: 880px;
     background-image: url(../images/about_pic1.jpg);
     background-size: cover;
-    /* background-color: #f90; */
 }
-.banner .banner_wrap .banner_text {
-    position: absolute;
-    height: 100%;
-    top: 0;
-    left: 8%;
-    display: flex;
-    align-items: center;
-}
-.banner .banner_wrap .banner_text .banner_title {
+.banner .banner_area .banner_text {
     display: flex;
     flex-direction: column;
-    gap: 24px;
+    justify-content: center;
+    height: 100%;
+    padding-left: 4%;
+    gap: 1.5rem;
 }
-.banner .banner_wrap .banner_text .banner_title h1 {
-    font-size: 40px;
+.banner .banner_area .banner_text h1 {
+    font-size: clamp(36px, 2.5rem, 44px);
     font-weight: 900;
     letter-spacing: 0.1em;
     line-height: 1.25em;
     color: #fff;
 }
-.banner .banner_wrap .banner_text .banner_title h3 {
-    font-size: 24px;
+.banner .banner_area .banner_text h3 {
+    font-size: clamp(20px, 1.5rem, 28px);
     letter-spacing: 0.1em;
     color: #fff;
 }
+
 .about {
     width: 100%;
-    margin: 64px 0;
+    margin: clamp(62px, 4rem, 68px) 0;
 }
 .about .container-about {
     width: 62.5%;
     margin: auto;
-    min-width: 625px
+    min-width: 700px;
+    max-width: 880px;
 }
 .about .container-about .about_wrap {
     display: flex;
     flex-direction: column;
     width: 100%;
-    gap: 64px;
+    gap: clamp(62px, 4rem, 68px);
 }
 .about .container-about .about_wrap .about_info {
     display: flex;
     flex-direction: column;
-    gap: 24px;
+    gap: 1.5rem;
 }
 .about .container-about .about_wrap .about_info .title h2 {
-    font-size: 32px;
+    font-size: clamp(30px, 2rem, 36px);
     font-weight: 900;
     letter-spacing: 0.1em;
     text-decoration: 4px #f90 underline;
 }
 .about .container-about .about_wrap .about_info .article p {
-    font-size: 16px;
+    font-size: clamp(14px, 1rem, 20px);
     letter-spacing: 0.1em;
     line-height: 1.5em;
 }
@@ -88,15 +85,46 @@
 
     /* width: 45%; */
 
-    font-size: 24px;
+    font-size: clamp(22px, 1.5rem, 28px);
     letter-spacing: 0.1em;
     text-align: center;
     text-decoration: none;
     color: #fff;
 
     margin: auto;
-    margin-top: 64px;
+    margin-top: clamp(62px, 4rem, 68px);
 }
 .about .container-about .about_button:hover {
     background-color: #a10;
+}
+
+@media screen and (max-width: 768px) {
+    .banner .banner_area {
+        min-width: 520px;
+    }
+    .banner .banner_area .banner_text h1 {
+        font-size: clamp(32px, 2.25rem, 40px);
+    }
+    .about .container-about {
+        min-width: 520px;
+    }
+}
+@media screen and (max-width: 540px) {
+    .banner .banner_area {
+        /* width: 80%; */
+        min-width: 320px;
+    }
+    .banner .banner_area .banner_text {
+        padding-left: 2%;
+        gap: 1.5rem;
+    }
+    .banner .banner_area .banner_text h1 {
+        font-size: 2rem;
+    }
+    .banner .banner_area .banner_text h3 {
+        font-size: 1rem;
+    }
+    .about .container-about {
+        min-width: 320px;
+    }
 }

@@ -51,6 +51,7 @@
     background-color: #a10;
     
 }
+
 .promo{
     width: 100%;
 }
@@ -94,7 +95,7 @@
     /* grid-column: 1 / 2; */
 
     width: 100%;
-    background-color: #eee;
+    background-color: #000;
 }
 .promo .container-promo .promo_block .promo_lilboxes .promo_lilbox img {
     width: 100%;
@@ -106,6 +107,7 @@
     /* grid-column: 2 / 3; */
 
     position: relative;
+    background-color: #000;
     /* background-image: url("../images/lilbox_pic2.jpg");
     background-size: cover; */
 } 
@@ -169,6 +171,7 @@
     /* box-shadow: 0 0 0.5em #a10; */
     background-color: #a10;
 }
+
 .menu {
     width: 100%;
 }
@@ -205,6 +208,7 @@
     height: auto;
     align-items: center;
     gap: 1.25rem;
+    cursor: pointer;
 }
 .menu .container-menu .menu_block .menu_list .menu_card:hover {
     opacity: 75%;
@@ -242,7 +246,7 @@
         background-image: url("../images/hero_pic1v2.jpg");
     }
     .promo {
-    display: none;
+        display: none;
     }
     .menu {
         display: none;
@@ -254,7 +258,6 @@
         left: 3%;
     }
 }
-
 @media screen and (max-width: 768px) {
 }
 
