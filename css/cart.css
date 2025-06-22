@@ -176,7 +176,7 @@
     .step .step_bar,
     .cart .container-cart {
         width: 88%;
-        min-width: 500px;
+        min-width: 520px;
     }
     .step .step_bar .step_arrow {
         width: 10%;

@@ -1,26 +1,26 @@
 .heading {
     width: 100%;
-    margin-top: clamp(60px, 4rem, 68px);
+    margin-top: clamp(62px, 4rem, 68px);
 }
 .heading .heading_text {
     display: flex;
     justify-content: center;
-    padding: clamp(60px, 4rem, 68px) 0;
+    padding: clamp(62px, 4rem, 68px) 0;
 }
 .heading .heading_text h1{
-    font-size: clamp(28px, 2rem, 36px);
+    font-size: clamp(30px, 2rem, 36px);
     font-weight: 900;
     letter-spacing: 0.1em;
     text-decoration: 4px #f90 underline;
 }
 .menu {
     width: 100%;
-    margin-bottom: 8rem;
+    margin-bottom: clamp(126px, 8rem, 132px);
 }
 .menu .container-menu {
-    width: 82.5%; 
+    width: 88%; 
     margin: auto;
-    min-width: 825px;
+    min-width: 980px;
 }
 .menu .container-menu .menu_list {
     display: grid;
@@ -48,11 +48,11 @@
     gap: 0.25rem;
 }
 .menu .container-menu .menu_list .menu_card .text h4 {
-    font-size: 1rem;
+    font-size: clamp(14px, 1rem, 20px);
     letter-spacing: 0.1em;
 }
 .menu .container-menu .menu_list .menu_card .text p {
-    font-size: 1rem;
+    font-size: clamp(14px, 1rem, 20px);
     font-weight: 900;
     letter-spacing: 0.1em;
     color: #f90;
@@ -97,6 +97,7 @@
     justify-content: flex-end;
     align-items: flex-start;
     font-size: 2rem;
+    font-weight: 900;
     color: #fff;
     cursor: pointer;
 }
@@ -121,11 +122,11 @@
     gap: 1.5rem;
 }
 .modal_content .modal_text .name {
-    font-size: 1.5rem;
+    font-size: clamp(22px, 1.5rem, 28px);
     letter-spacing: 0.1em;
 }
 .modal_content .modal_text .price {
-    font-size: 1.5rem;
+    font-size: clamp(22px, 1.5rem, 28px);
     font-weight: 900;
     letter-spacing: 0.1em;
     color: #f90;
@@ -135,7 +136,7 @@
     flex-direction: column;
     margin: 1.5rem 0;
     
-    font-size: 1rem;
+    font-size: clamp(14px, 1rem, 20px);
     letter-spacing: 0.1em;
 }
 .modal_content .modal_text .quantity_input {
@@ -149,7 +150,7 @@
     border: 1px solid #000;
     box-sizing: border-box;
 
-    font-size: 1.5rem;
+    font-size: clamp(22px, 1.5rem, 28px);
     letter-spacing: 0.1em;
 }
 .modal_content .modal_text .quantity_input input:focus {
@@ -166,7 +167,7 @@
     box-sizing: border-box;
     background-color: #f90;
     
-    font-size: 1.5rem;
+    font-size: clamp(22px, 1.5rem, 28px);
     letter-spacing: 0.1em;
     text-decoration: none;
     color: #fff;
@@ -176,4 +177,60 @@
 .modal_content .modal_text .quantity_input button:hover {
     /* box-shadow: 0 0 0.5em 0 #a10; */
     background-color: #a10;
+}
+
+@media screen and (max-width: 1024px) {
+    .menu .container-menu {
+        width: 80%;
+        min-width: 740px;
+    }   
+    .menu .container-menu .menu_list {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 4rem 2rem;
+    }
+    .menu .container-menu .menu_list .marinara {
+        grid-area: 2/3/3/4;
+    }
+}
+@media screen and (max-width: 768px) {
+    .menu .container-menu {
+        width: 60%;
+        min-width: 500px;
+    }   
+    .menu .container-menu .menu_list {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 4rem 4rem;
+    }
+    .menu .container-menu .menu_list .marinara {
+        grid-area: 2/2/3/3;
+    }
+
+    .modal_content {
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        min-width: 344px;
+        padding: 1rem;
+        gap: 1rem
+    }
+    .modal_content .modal_pic {
+        width: 75%;
+    }
+    .modal_content .close {
+        width: 72px;
+        height: 72px;
+    }
+}
+@media screen and (max-width: 540px) {
+    .menu .container-menu {
+        width: 60%;
+        min-width: 320px;
+    }   
+    .menu .container-menu .menu_list {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 4rem 2rem;
+    }
+    .menu .container-menu .menu_list .marinara {
+        grid-area: 4/1/5/2;
+    }
 }
