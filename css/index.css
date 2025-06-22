@@ -240,12 +240,14 @@
 @media screen and (max-width: 720px) {
     .hero .hero_wrap {
         top: 30%;
-        left: 3%;
     }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 540px) {
     .hero {
         background-image: url("../images/hero_pic1v.jpg");
+    }
+    .hero .hero_wrap {
+        top: 35%;
     }
 }
