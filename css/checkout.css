@@ -64,13 +64,9 @@
     position: relative;
     align-items: center;
     height: 20%;
-    padding-left: 4rem;
+    padding-left: 10%;
     border-bottom: 1px solid #ddd;
     font-size: 1rem;
-}
-.checkout .container-checkout .checkout_table .checkout_name,
-.checkout .container-checkout .checkout_table .checkout_phonenum {
-    padding-left: 6rem;
 }
 .checkout .container-checkout .checkout_table .checkout_receipt,
 .checkout .container-checkout .checkout_table .checkout_pay {
@@ -118,7 +114,7 @@
 .checkout .container-checkout .checkout_table .table_row .error1 {
     display: none;
     position: absolute;
-    right: 4%;
+    right: 0;
     font-size: 0.75rem;
     color: #a10;
 }
@@ -153,37 +149,19 @@
 }
 
 @media screen and (max-width: 1024px) {
-    html {
-        font-size: 16px;
-    }
 }
-@media screen and (max-width: 720px) {
-    html {
-        font-size: 12px;
-    }
-
+@media screen and (max-width: 768px) {
     .step .step_bar,
     .checkout .container-checkout {
-        min-width: 480px;
+        width: 88%;
+        min-width: 520px;
     }
     .step .step_bar .step_arrow {
-        width: 8%;
-    }
-    .step .step_bar .step_item .step_number {
-        width: 1.75rem;
-        height: 1.75rem;
-        font-size: 1.5rem;
-    }
-    .step .step_bar .step_item .step_text {
-        font-size: 1.5rem;
+        width: 10%;
     }
 
     .checkout .container-checkout .checkout_table .table_row {
-        padding-left: 3rem;
-    }
-    .checkout .container-checkout .checkout_table .checkout_name,
-    .checkout .container-checkout .checkout_table .checkout_phonenum {
-        padding-left: 5rem;
+        padding-left: 15%;
     }
 
     .checkout .container-checkout .checkout_table .table_row input[type="text"] {
@@ -199,10 +177,6 @@
     }
 }
 @media screen and (max-width: 540px) {
-    html {
-        font-size: 10px;
-    }
-
     .step .step_bar,
     .checkout .container-checkout {
         min-width: 320px;
@@ -210,21 +184,31 @@
     .step .step_bar .step_arrow {
         width: 6%;
     }
+    .step .step_bar .step_item .step_number {
+        width: 2rem;
+        height: 2rem;
+        font-size: 1.75rem;
+    }
+    .step .step_bar .step_item .step_text {
+        font-size: 1.75rem;
+    }
 
     .checkout .container-checkout .checkout_table .table_row {
-        padding-left: 1rem;
+        padding-left: 10%;
     }
-    .checkout .container-checkout .checkout_table .checkout_name,
-    .checkout .container-checkout .checkout_table .checkout_phonenum {
-        padding-left: 3rem;
+    .checkout .container-checkout .checkout_table .table_row {
+        padding-left: 8%;
     }
-
     .checkout .container-checkout .checkout_table .table_row input[type="text"] {
         width: 19rem;
         margin-left: 1rem;
     }
     .checkout .container-checkout .checkout_table .table_row input[type="radio"] {
         margin-left: 1rem;
+    }
+
+    .checkout .container-checkout .checkout_table .table_row .error1 {
+        font-size: 0.5rem;
     }
 
     .checkout .container-checkout .checkout_buttons .prev,

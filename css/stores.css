@@ -54,7 +54,7 @@
 }
 
 .stores .container-stores .stores_info .stores_list .stores_item .stores_name h2 {
-    font-size: 1.5rem;
+    font-size: clamp(22px, 1.5rem, 28px);
     font-weight: 900;
     letter-spacing: 0.1em;
 
@@ -65,7 +65,7 @@
     gap: 1rem;
 }
 .stores .container-stores .stores_info .stores_list .stores_item .stores_address p {
-    font-size: 1.2rem;
+    font-size: clamp(17.2px, 1.2rem, 23.2px);
     text-decoration: underline;
     letter-spacing: 0.1em;
     color: #000;
@@ -85,9 +85,6 @@
     } */
 }
 @media screen and (max-width: 720px) {
-    html {  
-        font-size: 14px;
-    }
     .stores .container-stores {
         width: 50%;
         min-width: 300px;

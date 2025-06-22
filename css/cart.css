@@ -171,43 +171,32 @@
 }
 
 @media screen and (max-width: 1024px) {
-    html {
-        font-size: 16px;
-    }
-    
 }
-@media screen and (max-width: 720px) {
-    html {
-        font-size: 12px;
-    }
-
+@media screen and (max-width: 768px) {
     .step .step_bar,
     .cart .container-cart {
-        min-width: 480px;
+        width: 88%;
+        min-width: 500px;
     }
     .step .step_bar .step_arrow {
-        width: 8%;
+        width: 10%;
     }
-    .step .step_bar .step_item .step_number {
-        width: 1.75rem;
-        height: 1.75rem;
-        font-size: 1.5rem;
-    }
-    .step .step_bar .step_item .step_text {
-        font-size: 1.5rem;
-    }
-}
+}    
 @media screen and (max-width: 540px) {
-    html {
-        font-size: 10px;
-    }
-
     .step .step_bar,
     .cart .container-cart {
         min-width: 320px;
     }
     .step .step_bar .step_arrow {
         width: 6%;
+    }
+    .step .step_bar .step_item .step_number {
+        width: 2rem;
+        height: 2rem;
+        font-size: 1.75rem;
+    }
+    .step .step_bar .step_item .step_text {
+        font-size: 1.75rem;
     }
 
     .cart .container-cart .cart_table .table_head .tr .th.name,

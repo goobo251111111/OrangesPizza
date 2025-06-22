@@ -64,7 +64,7 @@
     position: relative;
     align-items: center;
     height: 25%;
-    padding-left: 4rem;
+    padding-left: 10%;
     border-bottom: 1px solid #eee;
     font-size: 1rem;
 }
@@ -144,7 +144,7 @@
 .pickup .container-pickup .pickup_table .table_row .error1 {
     display: none;
     position: absolute;
-    right: 4%;
+    right: 0;
     font-size: 0.75rem;
     color: #a10;
 }
@@ -179,33 +179,19 @@
 }
 
 @media screen and (max-width: 1024px) {
-    html {
-        font-size: 16px;
-    }
 }
-@media screen and (max-width: 720px) {
-    html {
-        font-size: 12px;
-    }
-
+@media screen and (max-width: 768px) {
     .step .step_bar,
     .pickup .container-pickup {
-        min-width: 480px;
+        width: 88%;
+        min-width: 520px;
     }
     .step .step_bar .step_arrow {
-        width: 8%;
-    }
-    .step .step_bar .step_item .step_number {
-        width: 1.75rem;
-        height: 1.75rem;
-        font-size: 1.5rem;
-    }
-    .step .step_bar .step_item .step_text {
-        font-size: 1.5rem;
+        width: 10%;
     }
 
-        .pickup .container-pickup .pickup_table .table_row {
-        padding-left: 3rem;
+    .pickup .container-pickup .pickup_table .table_row {
+        padding-left: 15%;
     }
 
     .pickup .container-pickup .pickup_table .table_row .methods,
@@ -214,16 +200,8 @@
     .pickup .container-pickup .pickup_table .table_row #address {
         margin-left: 2rem;
     }
-
-    .pickup .container-pickup .pickup_table .table_row .error1 {
-        right: 0;
-    }
 }
 @media screen and (max-width: 540px) {
-    html {
-        font-size: 10px;
-    }
-
     .step .step_bar,
     .pickup .container-pickup {
         min-width: 320px;
@@ -231,11 +209,18 @@
     .step .step_bar .step_arrow {
         width: 6%;
     }
-
-    .pickup .container-pickup .pickup_table .table_row {
-        padding-left: 1rem;
+    .step .step_bar .step_item .step_number {
+        width: 2rem;
+        height: 2rem;
+        font-size: 1.75rem;
+    }
+    .step .step_bar .step_item .step_text {
+        font-size: 1.75rem;
     }
 
+    .pickup .container-pickup .pickup_table .table_row {
+        padding-left: 10%;
+    }
     .pickup .container-pickup .pickup_table .table_row .methods,
     .pickup .container-pickup .pickup_table .table_row .dateandtime,
     .pickup .container-pickup .pickup_table .table_row #store,
@@ -251,6 +236,9 @@
         width: 7rem;
     }
 
+    .pickup .container-pickup .pickup_table .table_row .error1 {
+        font-size: 0.5rem;
+    }
 
     .pickup .container-pickup .pickup_table .table_row .methods .method {
         padding: 0.60em 1.7em;

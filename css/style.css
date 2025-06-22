@@ -130,7 +130,7 @@ footer .container-footer .footer_info p {
 
 @media screen and (max-width: 1024px) {
     html {
-        font-size: 14px;
+        /* font-size: 14px; */
     }
     header .container-header .header_list,
     header .container-header .header_utility  {
@@ -236,13 +236,13 @@ footer .container-footer .footer_info p {
         font-size: 12px;
     }
     header .container-header {
-        /* padding: 0 4% 0 4%; */
+        padding: 0 4% 0 4%;
     }
     header .container-header .header_toggle:checked ~ .header_burger {
         width: 100%;
     }
     footer .container-footer {
-        /* padding: 0 4% 0 4%; */
+        padding: 0 4% 0 4%;
     }
         header .container-header .header_toggle:checked ~ .header_burger .list {
         padding-top: 28px;
