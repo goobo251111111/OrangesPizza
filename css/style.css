@@ -231,18 +231,18 @@ footer .container-footer .footer_info p {
         text-decoration: clamp(4px, 0.25rem, 8px) #f90 underline;
     }
 }
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 768px) {
     html {
         font-size: 12px;
     }
     header .container-header {
-        padding: 0 4% 0 4%;
+        /* padding: 0 4% 0 4%; */
     }
     header .container-header .header_toggle:checked ~ .header_burger {
         width: 100%;
     }
     footer .container-footer {
-        padding: 0 4% 0 4%;
+        /* padding: 0 4% 0 4%; */
     }
         header .container-header .header_toggle:checked ~ .header_burger .list {
         padding-top: 28px;

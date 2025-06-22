@@ -243,17 +243,23 @@
     }
 }
 @media screen and (max-width: 1024px) {
+    .hero .hero_wrap {
+        top: 30%;
+        left: 3%;
+    }
 }
 
 @media screen and (max-width: 768px) {
-    .hero .hero_wrap {
-        top: 30%;
-        left: 4%;
-    }
 }
 
 @media screen and (max-width: 540px) {
     .hero .hero_wrap {
-        top: 35%;
+        top: 33%;
+    }
+    .promo {
+        display: none;
+    }
+    .menu {
+        display: none;
     }
 }
