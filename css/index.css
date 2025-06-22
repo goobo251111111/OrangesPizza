@@ -237,16 +237,22 @@
     background-color: #a10;
 }
 
-@media screen and (max-width: 720px) {
+@media (orientation: portrait) {
+    .hero {
+        background-image: url("../images/hero_pic1v2.jpg");
+    }
+}
+@media screen and (max-width: 1024px) {
+}
+
+@media screen and (max-width: 768px) {
     .hero .hero_wrap {
         top: 30%;
+        left: 4%;
     }
 }
 
 @media screen and (max-width: 540px) {
-    .hero {
-        background-image: url("../images/hero_pic1v2.jpg");
-    }
     .hero .hero_wrap {
         top: 35%;
     }
