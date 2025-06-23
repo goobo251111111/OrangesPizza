@@ -102,20 +102,15 @@ footer .container-footer {
 }
 footer .container-footer .footer_logo {
     height: clamp(73.5px, 5.25rem, 84px);
-    /* height: clamp(72px, 5.25rem, 88px); */
     margin-top: 1.875rem;
-    /* margin-top: clamp(14px, 1.875rem, 34px); */
     margin-bottom: 1.875rem;
-    /* margin-bottom: clamp(14px, 1.875rem, 34px); */
 }  
 footer .container-footer .footer_logo img {
     height: 100%;
 }  
 footer .container-footer .footer_info {
     margin-left: 1.875rem;
-    /* margin-left: clamp(30px, 1.875rem, 34px); */
     margin-bottom: 1.25rem;
-    /* margin-bottom: clamp(20px, 1.25rem, 24px); */
 }
 footer .container-footer .footer_info p {
     font-size: 0.875rem;

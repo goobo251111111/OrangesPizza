@@ -5,7 +5,7 @@
 .heading .heading_text {
     display: flex;
     justify-content: center;
-    padding: clamp(62px, 4rem, 68px) 0;
+    padding: clamp(62px, 4rem, 68px) 0 clamp(78px, 5rem, 84px);
 }
 .heading .heading_text h1{
     font-size: clamp(30px, 2rem, 36px);
