@@ -146,13 +146,14 @@
     display: flex;
 }
 .modal_content .modal_text .quantity_input input {
-    all: unset;
+    /* all: unset; */
     width: 100px;
-    padding-left: 2.25rem;
     
     border: 1px solid #000;
     box-sizing: border-box;
-
+    
+        
+    text-align: center;
     font-size: clamp(22px, 1.5rem, 28px);
     letter-spacing: 0.1em;
 }
@@ -264,6 +265,18 @@
     .modal_content .close {
         width: 72px;
         height: 72px;
+    }
+    .modal_content .modal_text {
+        width: 80%;
+    }
+    .modal_content .modal_text .quantity_input {
+        width: 100%;
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+    .modal_content .modal_text .quantity_input input  {
+        width: 100%;
+        padding: 0.5em;
     }
 }
 }
