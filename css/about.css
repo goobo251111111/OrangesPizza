@@ -60,6 +60,9 @@
     letter-spacing: 0.1em;
     text-decoration: 4px #f90 underline;
 }
+.about .container-about .about_wrap .about_info .article {
+    padding: 0.5rem;
+}
 .about .container-about .about_wrap .about_info .article p {
     font-size: clamp(14px, 1rem, 20px);
     letter-spacing: 0.1em;
@@ -126,5 +129,8 @@
     }
     .about .container-about {
         min-width: 320px;
+    }
+    .about .container-about .about_wrap .about_info .article p {
+        font-size: 1rem;
     }
 }

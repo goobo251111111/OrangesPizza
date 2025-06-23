@@ -94,13 +94,13 @@
         flex-direction: column;
         align-items: center;
         width: 100%;
+        gap: 5rem;
     }
     .stores .container-stores .stores_info .stores_pic {
         width: 100%;
         height: auto;
     }
     .stores .container-stores .stores_info .stores_list {
-        gap: 2.5rem;
-        padding: 0;
+        gap: 4rem;
     }
 }
