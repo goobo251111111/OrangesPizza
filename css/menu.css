@@ -209,25 +209,15 @@
     }
 
     .modal_content {
-        width: 66%;
+        width: 72%;
         min-width: 540px;
-    }
-    /* .modal_content {
-        flex-direction: column;
-        align-items: center;
-        width: 50%;
-        min-width: 344px;
-        padding: 2rem 1rem 3rem;
-        
-        gap: 1rem
-    }
-    .modal_content .modal_pic {
-        width: 75%;
+        padding: 1rem 1rem;
+        gap: 1rem;
     }
     .modal_content .close {
         width: 72px;
         height: 72px;
-    } */
+    }
 }
 @media screen and (max-width: 540px) {
     .menu .container-menu {
@@ -265,8 +255,7 @@
         align-items: center;
         width: 50%;
         min-width: 320px;
-        padding: 2rem 1rem 3rem;
-        
+        padding: 1.5rem 0 3rem;
         gap: 1rem
     }
     .modal_content .modal_pic {
