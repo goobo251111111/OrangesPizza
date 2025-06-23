@@ -1,28 +1,29 @@
 .heading {
     width: 100%;
-    margin-top: clamp(62px, 4rem, 68px);
+    margin-top: clamp(62px, 4rem, 80px);
 }
 .heading .heading_text {
     display: flex;
     justify-content: center;
-    padding: clamp(62px, 4rem, 68px) 0;
+    padding-top: clamp(62px, 4rem, 80px);
+    padding-bottom: clamp(78px, 5rem, 100px);
 }
 .heading .heading_text h1{
-    font-size: clamp(30px, 2rem, 36px);
+    font-size: clamp(30px, 2rem, 40px);
     font-weight: 900;
     letter-spacing: 0.1em;
-    text-decoration: 4px #f90 underline;
+    text-decoration: clamp(4px, 0.25rem, 5px) #f90 underline;
 }
 
 .stores {
     width: 100%;
-    margin-bottom: clamp(126px, 8rem, 132px);
+    margin-bottom: clamp(126px, 8rem, 1460px);
 }
 .stores .container-stores {
     width: 67%;
     margin: auto;
     min-width: 700px;
-    max-width: 900px;
+    max-width: 1120px;
 }
 .stores .container-stores .stores_info {
     display: flex;
@@ -55,7 +56,7 @@
     gap: 0.75rem;
 }
 .stores .container-stores .stores_info .stores_list .stores_item .stores_name h2 {
-    font-size: clamp(22px, 1.5rem, 28px);
+    font-size: clamp(22px, 1.5rem, 30px);
     font-weight: 900;
     letter-spacing: 0.1em;
 
@@ -66,7 +67,7 @@
     gap: 1rem;
 }
 .stores .container-stores .stores_info .stores_list .stores_item .stores_address p {
-    font-size: clamp(17.2px, 1.2rem, 23.2px);
+    font-size: clamp(17.2px, 1.2rem, 24px);
     text-decoration: underline;
     letter-spacing: 0.1em;
     color: #000;
@@ -85,7 +86,7 @@
         font-size: 16px;
     } */
 }
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 768px) {
     .stores .container-stores {
         width: 50%;
         min-width: 300px;

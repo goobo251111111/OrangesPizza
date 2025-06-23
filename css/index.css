@@ -38,7 +38,7 @@
     background-color: #f90;
     border: none;
 
-    font-size: clamp(20px, 1.5rem, 28px);
+    font-size: clamp(20px, 1.5rem, 30px);
     letter-spacing: 0.1em;
     text-align: center;
     text-decoration: none;
@@ -58,7 +58,8 @@
 .promo .container-promo {
     width: 67%;
     margin: 5.5rem auto;
-    /* min-width: 670px; */
+    min-width: 670px;
+    max-width: 1120px;
 }
 .promo .container-promo .promo_block {
     display: grid;
@@ -73,7 +74,7 @@
     aspect-ratio: 920 / 250;
     padding-left: 10%;
     background-color: #eee;
-    background-image: url("../images/promo_pic1.jpg");
+    background-image: url("../images/promo_pic2.jpg");
     background-size: cover;
 }
 .promo .container-promo .promo_block .promo_bigbox h2 {
@@ -160,7 +161,7 @@
     /* box-shadow: 0 0 0.75em 0 #f90; */
     background-color: #f90;
 
-    font-size: 1rem;
+    font-size: clamp(14px, 1rem, 20px);
     letter-spacing: 0.1em;
     text-decoration: none;
     color: #fff;
@@ -178,7 +179,8 @@
 .menu .container-menu {
     width: 67%;
     margin: 5.5rem auto;
-    /* min-width: 670px; */
+    min-width: 670px;
+    max-width: 1120px;
 }
 .menu .container-menu .menu_block {
     display: flex;
@@ -199,7 +201,7 @@
 .menu .container-menu .menu_block .menu_list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 3.75rem;
+    gap: 2.25rem;
 }
 .menu .container-menu .menu_block .menu_list .menu_card {
     display: flex;
@@ -220,7 +222,7 @@
     object-fit: cover;
 }    
 .menu .container-menu .menu_block menu_list .menu_card h4 {
-    font-size: 1rem;
+    font-size: clamp(14px, 1rem, 20px);
     letter-spacing: 0.1em;
 }
 .menu .container-menu .menu_block .menu_button {
@@ -229,7 +231,7 @@
     background-color: #f90;
     border: none;
 
-    font-size: 1rem;
+    font-size: clamp(14px, 1rem, 20px);
     letter-spacing: 0.1em;
     text-decoration: none;
     color: #fff;

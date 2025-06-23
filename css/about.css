@@ -1,14 +1,14 @@
 .banner {
     width: 100%;
-    margin-top: clamp(94px, 6rem, 100px);
-    margin-bottom: clamp(62px, 4rem, 68px);
+    margin-top: clamp(94px, 6rem, 120px);
+    margin-bottom: clamp(62px, 4rem, 80px);
 }
 .banner .banner_area {
     width: 65%;
     aspect-ratio: 3 / 1;
     margin: auto;
     min-width: 700px;
-    max-width: 880px;
+    max-width: 1050px;
     background-image: url(../images/about_pic1.jpg);
     background-size: cover;
 }
@@ -21,33 +21,33 @@
     gap: 1.5rem;
 }
 .banner .banner_area .banner_text h1 {
-    font-size: clamp(36px, 2.5rem, 44px);
+    font-size: clamp(36px, 2.5rem, 50px);
     font-weight: 900;
     letter-spacing: 0.1em;
     line-height: 1.25em;
     color: #fff;
 }
 .banner .banner_area .banner_text h3 {
-    font-size: clamp(20px, 1.5rem, 28px);
+    font-size: clamp(20px, 1.5rem, 30px);
     letter-spacing: 0.1em;
     color: #fff;
 }
 
 .about {
     width: 100%;
-    margin: clamp(62px, 4rem, 68px) 0;
+    margin: clamp(62px, 4rem, 80px) 0;
 }
 .about .container-about {
     width: 62.5%;
     margin: auto;
     min-width: 700px;
-    max-width: 880px;
+    max-width: 1050px;
 }
 .about .container-about .about_wrap {
     display: flex;
     flex-direction: column;
     width: 100%;
-    gap: clamp(62px, 4rem, 68px);
+    gap: clamp(62px, 4rem, 80px);
 }
 .about .container-about .about_wrap .about_info {
     display: flex;
@@ -55,7 +55,7 @@
     gap: 1.5rem;
 }
 .about .container-about .about_wrap .about_info .title h2 {
-    font-size: clamp(30px, 2rem, 36px);
+    font-size: clamp(30px, 2rem, 80px);
     font-weight: 900;
     letter-spacing: 0.1em;
     text-decoration: 4px #f90 underline;
@@ -86,14 +86,14 @@
     background-color: #f90;
     border: none;
 
-    font-size: clamp(20px, 1.5rem, 28px);
+    font-size: clamp(20px, 1.5rem, 30px);
     letter-spacing: 0.1em;
     text-align: center;
     text-decoration: none;
     color: #fff;
 
     margin: auto;
-    margin-top: clamp(62px, 4rem, 68px);
+    margin-top: clamp(62px, 4rem, 80px);
 }
 .about .container-about .about_button:hover {
     background-color: #a10;
