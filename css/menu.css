@@ -85,7 +85,7 @@
     padding: 2rem 1rem;
     gap: 2rem;
     background: #fff;
-    box-shadow: 0 0 0.75rem 0 #eee;
+    box-shadow: 0 0 1rem #bbb;
 }
 .modal_content .close {
     position: absolute;
@@ -238,7 +238,7 @@
     }
     .menu .container-menu .menu_list .menu_card {
         padding: 8px;
-        background-color: #eeeeee44;
+        background-color: #dddddd44;
     }
     .menu .container-menu .menu_list .menu_card .text {
         flex-direction: row;

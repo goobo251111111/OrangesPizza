@@ -74,7 +74,7 @@
     aspect-ratio: 920 / 250;
     padding-left: 10%;
     background-color: #eee;
-    background-image: url("../images/promo_pic2.jpg");
+    background-image: url("../images/promo_pic11.jpg");
     background-size: cover;
 }
 .promo .container-promo .promo_block .promo_bigbox h2 {
@@ -96,27 +96,42 @@
     /* grid-column: 1 / 2; */
 
     width: 100%;
-    background-color: #000;
+    /* background-color: #000; */
 }
-.promo .container-promo .promo_block .promo_lilboxes .promo_lilbox img {
+.promo .container-promo .promo_block .promo_lilboxes .box1 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.promo .container-promo .promo_block .promo_lilboxes .box1 p {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    color: #fff;
+
+    font-size: 1.25rem;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    text-decoration: none;
+}
+.promo .container-promo .promo_block .promo_lilboxes .box1 img {
     width: 100%;
     height: auto;
     display: block;
-    object-fit: cover;
+    object-fit: fill;
 }
 .promo .container-promo .promo_block .promo_lilboxes .box2 {
-    /* grid-column: 2 / 3; */
-
     position: relative;
     background-color: #000;
-    /* background-image: url("../images/lilbox_pic2.jpg");
-    background-size: cover; */
+    background-image: url("../images/promo_pic3.jpg");
+    background-size: cover;
 } 
 .promo .container-promo .promo_block .promo_lilboxes .box2 a {
     position: absolute;
     right: 8px;
     bottom: 8px;
     color: #fff;
+    opacity: 0.8;
 }
 .promo .container-promo .promo_block .coupon_box {
     grid-area: 2/6/3/10;
@@ -125,7 +140,7 @@
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    border: 1px solid #000;
+    /* border: 1px solid #000; */
     background-color: #fda;
     
     /* height: 100%; */
@@ -221,7 +236,7 @@
     display: block;
     object-fit: cover;
 }    
-.menu .container-menu .menu_block menu_list .menu_card h4 {
+.menu .container-menu .menu_block .menu_list .menu_card h4 {
     font-size: clamp(14px, 1rem, 20px);
     letter-spacing: 0.1em;
 }
