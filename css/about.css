@@ -112,8 +112,8 @@
 }
 @media screen and (max-width: 540px) {
     .banner .banner_area {
-        /* width: 80%; */
-        min-width: 320px;
+        width: 90%;
+        min-width: 290px;
     }
     .banner .banner_area .banner_text {
         padding-left: 2%;
@@ -126,7 +126,8 @@
         font-size: 1rem;
     }
     .about .container-about {
-        min-width: 320px;
+        width: 90%;
+        min-width: 290px;
     }
     .about .container-about .about_wrap .about_info .article p {
         font-size: 1rem;

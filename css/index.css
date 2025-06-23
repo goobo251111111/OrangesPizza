@@ -58,7 +58,7 @@
 .promo .container-promo {
     width: 67%;
     margin: 5.5rem auto;
-    min-width: 670px;
+    min-width: 600px;
     max-width: 1120px;
 }
 .promo .container-promo .promo_block {
@@ -196,7 +196,7 @@
 .menu .container-menu {
     width: 67%;
     margin: 5.5rem auto;
-    min-width: 670px;
+    min-width: 600px;
     max-width: 1120px;
 }
 .menu .container-menu .menu_block {

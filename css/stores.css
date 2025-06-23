@@ -89,7 +89,7 @@
 @media screen and (max-width: 768px) {
     .stores .container-stores {
         width: 50%;
-        min-width: 300px;
+        min-width: 298px;
     }
     .stores .container-stores .stores_info {
         flex-direction: column;

@@ -91,8 +91,8 @@
     position: absolute;
     top: 0;
     right: 0;
-    width: 88px;
-    height: 88px;
+    width: 5.5rem;
+    height: 5.5rem;
     padding: 0.5rem;
     clip-path: polygon(100% 0, 100% 100%, 0 0);
     background-color: #b10;
@@ -215,19 +215,15 @@
     }
 
     .modal_content {
-        width: 72%;
+        width: 80%;
         min-width: 540px;
         gap: 1rem;
-    }
-    .modal_content .close {
-        width: 72px;
-        height: 72px;
     }
 }
 @media screen and (max-width: 540px) {
     .menu .container-menu {
         width: 60%;
-        min-width: 320px;
+        min-width: 298px;
     }
     .menu .container-menu .menu_list {
         grid-template-columns: repeat(1, 1fr);
@@ -237,8 +233,11 @@
         grid-area: 4/1/5/2;
     }
     .menu .container-menu .menu_list .menu_card {
-        padding: 8px;
-        background-color: #dddddd44;
+        /* width: 226px; */
+        margin: auto;
+        padding: 8px 12px;
+        border-bottom: 1px solid #ddd;
+        /* background-color: #dddddd66; */
     }
     .menu .container-menu .menu_list .menu_card .text {
         flex-direction: row;
@@ -259,19 +258,15 @@
         flex-direction: column;
         align-items: center;
         width: 50%;
-        min-width: 320px;
+        min-width: 298px;
         padding: 1.25rem 0;
         gap: 0.25rem
     }
     .modal_content .modal_pic {
         width: 70%;
     }
-    .modal_content .close {
-        width: 72px;
-        height: 72px;
-    }
     .modal_content .modal_text {
-        width: 70%;
+        width: 76%;
         padding: 0;
         gap: 1rem;
     }

@@ -116,18 +116,19 @@
 }
 @media screen and (max-width: 540px) {
     .news .container-news {
-        min-width: 320px;
+        width: 90%;
+        min-width: 298px;
     }
     .news .container-news .news_board {
-        gap: 4rem;
+        /* gap: 4rem; */
     }
     .news .container-news .news_board .news_card {
-        padding: 2px 1px;
+        padding: 2px 0;
         gap: 1rem;
     }
     .news .container-news .news_board .news_card .news_text {
         width: 66%;
-        padding: 0.25rem;
+        padding: 0rem;
     }
     .news .container-news .news_board .news_card .news_text .title h2 {
         font-size: 1.25rem;
