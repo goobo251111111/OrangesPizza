@@ -117,6 +117,9 @@
     .news .container-news {
         min-width: 320px;
     }
+    .news .container-news .news_board {
+        gap: 4rem;
+    }
     .news .container-news .news_board .news_card {
         padding: 2px 1px;
         gap: 1rem;

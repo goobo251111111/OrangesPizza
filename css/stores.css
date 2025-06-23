@@ -22,6 +22,7 @@
     width: 67%;
     margin: auto;
     min-width: 700px;
+    max-width: 900px;
 }
 .stores .container-stores .stores_info {
     display: flex;
