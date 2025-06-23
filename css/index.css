@@ -241,17 +241,6 @@
     background-color: #a10;
 }
 
-@media (orientation: portrait) {
-    .hero {
-        background-image: url("../images/hero_pic1v2.jpg");
-    }
-    .promo {
-        display: none;
-    }
-    .menu {
-        display: none;
-    }
-}
 @media screen and (max-width: 1024px) {
     .hero .hero_wrap {
         top: 30%;
@@ -266,4 +255,16 @@
         top: 33%;
     }
 
+}
+
+@media (orientation: portrait) {
+    .hero {
+        background-image: url("../images/hero_pic1v2.jpg");
+    }
+    .promo {
+        display: none;
+    }
+    .menu {
+        display: none;
+    }
 }
