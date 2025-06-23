@@ -101,7 +101,7 @@ footer .container-footer {
     padding: 0 6% 0 8%;
 }
 footer .container-footer .footer_logo {
-    height: 5.25rem;
+    height: clamp(73.5px, 5.25rem, 84px);
     /* height: clamp(72px, 5.25rem, 88px); */
     margin-top: 1.875rem;
     /* margin-top: clamp(14px, 1.875rem, 34px); */
