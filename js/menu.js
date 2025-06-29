@@ -49,7 +49,7 @@ function addToCart() {
         itemExist.quantity += item.quantity;
         itemExist.subtotal = itemExist.price * itemExist.quantity; 
     } else {
-        cart.push(item); // ← 不存在就加新項目
+        cart.push(item); // 不存在就加新項目
     }
 
     localStorage.setItem("cart", JSON.stringify(cart));
