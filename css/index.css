@@ -123,7 +123,7 @@
 .promo .container-promo .promo_block .promo_lilboxes .box2 {
     position: relative;
     background-color: #000;
-    background-image: url("../images/promo_pic3.jpg");
+    /* background-image: url("../images/promo_pic3.jpg"); */
     background-size: cover;
 } 
 .promo .container-promo .promo_block .promo_lilboxes .box2 a {
